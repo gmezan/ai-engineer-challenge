@@ -96,3 +96,8 @@ export ENCRYPTION_KEY=$(openssl rand -base64 32)
 gh secret set ENCRYPTION_KEY \
   --repo $OWNER/$REPO \
   --body "$ENCRYPTION_KEY"
+
+az role assignment create \
+  --assignee $ID_GH_REPO_SERVICE_PRINCIPAL \
+  --role "Cognitive Services Contributor" \
+  --scope /subscriptions/$SUBSCRIPTION_ID
