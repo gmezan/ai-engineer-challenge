@@ -1,0 +1,24 @@
+# Terraform state files and backups
+*.tfstate
+*.tfstate.*
+*.tfplan
+
+# Terraform CLI configuration files
+.terraformrc
+terraform.rc
+
+# Terraform variable definition files (sensitive data)
+*.tfvars
+*.tfvars.json
+
+# Terraform internal directory for providers and modules
+.terraform/
+
+# Crash log files
+crash.log
+
+# Operating system and editor-specific files
+.DS_Store
+.vscode/
+.idea/
+.secrets
