@@ -1,4 +1,4 @@
-name: 'Azure Terraform Plan/Apply - Optimized Secret Management'
+name: 'Azure Terraform Plan/Apply'
 
 on:
   push:

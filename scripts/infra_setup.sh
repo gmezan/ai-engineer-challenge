@@ -91,3 +91,8 @@ gh secret set AZ_TF_RG \
 gh secret set AZ_TF_SA \
     --repo $OWNER/$REPO \
     --body "$STORAGE_ACCOUNT_NAME"
+
+export ENCRYPTION_KEY=$(openssl rand -base64 32)
+gh secret set ENCRYPTION_KEY \
+  --repo $OWNER/$REPO \
+  --body "$ENCRYPTION_KEY"
