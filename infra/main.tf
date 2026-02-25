@@ -16,3 +16,19 @@ resource "azurerm_cognitive_account" "aoai" {
   kind                = "OpenAI"
   sku_name            = "S0"
 }
+
+resource "azurerm_cognitive_deployment" "example" {
+  name                 = "gpt-4.1-mini"
+  cognitive_account_id = azurerm_cognitive_account.aoai.id
+
+  model {
+    format  = "OpenAI"
+    name    = "gpt-4.1-mini"
+    version = "2025-04-14"
+  }
+
+  sku {
+    name     = "Standard"
+    capacity = 4
+  }
+}
