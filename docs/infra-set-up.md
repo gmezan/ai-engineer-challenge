@@ -63,25 +63,25 @@ Prerequisites:
 
     ```sh
     az identity federated-credential create --identity-name $ID_GH_REPO \
-                                        --name onPullRequest \
-                                        --resource-group $MGMT_RESOURCE_GROUP_NAME \
-                                        --audiences api://AzureADTokenExchange \
-                                        --issuer https://token.actions.githubusercontent.com \
-                                        --subject repo:$OWNER/$REPO:pull_request
+                                    --name onPullRequest \
+                                    --resource-group $MGMT_RESOURCE_GROUP_NAME \
+                                    --audiences api://AzureADTokenExchange \
+                                    --issuer https://token.actions.githubusercontent.com \
+                                    --subject repo:"$OWNER"/"$REPO":pull_request
 
     az identity federated-credential create --identity-name $ID_GH_REPO \
-                                        --name onBranch \
-                                        --resource-group $MGMT_RESOURCE_GROUP_NAME \
-                                        --audiences api://AzureADTokenExchange \
-                                        --issuer https://token.actions.githubusercontent.com \
-                                        --subject repo:$OWNER/$REPO:ref:refs/heads/main-azure
+                                    --name onBranch \
+                                    --resource-group $MGMT_RESOURCE_GROUP_NAME \
+                                    --audiences api://AzureADTokenExchange \
+                                    --issuer https://token.actions.githubusercontent.com \
+                                    --subject repo:"$OWNER"/"$REPO":ref:refs/heads/main
 
     az identity federated-credential create --identity-name $ID_GH_REPO  \
-                                        --name onEnvironment \
-                                        --resource-group $MGMT_RESOURCE_GROUP_NAME \
-                                        --audiences api://AzureADTokenExchange \
-                                        --issuer https://token.actions.githubusercontent.com \
-                                        --subject repo:$OWNER/$REPO:environment:azure
+                                    --name onEnvironment \
+                                    --resource-group $MGMT_RESOURCE_GROUP_NAME \
+                                    --audiences api://AzureADTokenExchange \
+                                    --issuer https://token.actions.githubusercontent.com \
+                                    --subject repo:"$OWNER"/"$REPO":environment:azure
     ```
 
 1. Configure credentials in GH. Go to the correspondent GH repo. In _Settings_ > _Secrets and variables_ > _Actions_, create the following secrets with the values corresponding to the created managed identity.
@@ -103,5 +103,5 @@ Prerequisites:
 
     gh secret set AZURE_TENANT_ID \
     --repo $OWNER/$REPO \
-    --body "$TENANT_ID"
+    --body "$AZURE_TENANT_ID"
     ```

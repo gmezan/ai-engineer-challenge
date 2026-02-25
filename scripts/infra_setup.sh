@@ -53,21 +53,21 @@ az identity federated-credential create --identity-name $ID_GH_REPO \
                                     --resource-group $MGMT_RESOURCE_GROUP_NAME \
                                     --audiences api://AzureADTokenExchange \
                                     --issuer https://token.actions.githubusercontent.com \
-                                    --subject repo:$OWNER/$REPO:pull_request
+                                    --subject repo:"$OWNER"/"$REPO":pull_request
 
 az identity federated-credential create --identity-name $ID_GH_REPO \
                                     --name onBranch \
                                     --resource-group $MGMT_RESOURCE_GROUP_NAME \
                                     --audiences api://AzureADTokenExchange \
                                     --issuer https://token.actions.githubusercontent.com \
-                                    --subject repo:$OWNER/$REPO:ref:refs/heads/main-azure
+                                    --subject repo:"$OWNER"/"$REPO":ref:refs/heads/main
 
 az identity federated-credential create --identity-name $ID_GH_REPO  \
                                     --name onEnvironment \
                                     --resource-group $MGMT_RESOURCE_GROUP_NAME \
                                     --audiences api://AzureADTokenExchange \
                                     --issuer https://token.actions.githubusercontent.com \
-                                    --subject repo:$OWNER/$REPO:environment:azure
+                                    --subject repo:"$OWNER"/"$REPO":environment:azure
 
 
 gh auth login
@@ -82,7 +82,7 @@ gh secret set AZURE_SUBSCRIPTION_ID \
 
 gh secret set AZURE_TENANT_ID \
     --repo $OWNER/$REPO \
-    --body "$TENANT_ID"
+    --body "$AZURE_TENANT_ID"
 
 gh secret set AZ_TF_RG \
     --repo $OWNER/$REPO \
