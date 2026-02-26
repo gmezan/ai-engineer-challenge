@@ -115,3 +115,19 @@ resource "azurerm_cosmosdb_sql_container" "transactions" {
   partition_key_version = 1
   throughput            = 400
 }
+
+resource "azurerm_cognitive_deployment" "gpt-5-mini" {
+  name                 = "gpt-5-mini"
+  cognitive_account_id = azurerm_cognitive_account.aoai.id
+
+  model {
+    format  = "OpenAI"
+    name    = "gpt-5-mini"
+    version = "2025-08-07"
+  }
+
+  sku {
+    name     = "GlobalStandard"
+    capacity = 20
+  }
+}
