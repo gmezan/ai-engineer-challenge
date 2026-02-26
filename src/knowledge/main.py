@@ -57,7 +57,8 @@ def _build_index() -> SearchIndex:
     )
 
     fields = [
-        SimpleField(name="policy_id", type=SearchFieldDataType.String, key=True, filterable=True),
+        SimpleField(name="chunk_id", type=SearchFieldDataType.String, key=True, filterable=True),
+        SimpleField(name="policy_id", type=SearchFieldDataType.String, filterable=True),
         SearchableField(name="rule", type=SearchFieldDataType.String, analyzer_name="en.lucene"),
         SearchField(
             name="rule_vector",
@@ -74,7 +75,7 @@ def _build_index() -> SearchIndex:
 def create_vector_index():
     """Create the search index with a vector field based on the rule text.
 
-    The index will have a key field `policy_id`, a searchable `rule`
+    The index will have a key field `chunk_id`, a searchable `rule`
     field, and a vector field `rule_vector` containing the embedding for
     the rule content. If the index already exists this function is a no-op.
     """
@@ -86,7 +87,13 @@ def create_vector_index():
         vector_type = str(getattr(vector_field, "type", ""))
         vector_dims = getattr(vector_field, "vector_search_dimensions", None)
 
-        if vector_field and vector_type == "Collection(Edm.Single)" and vector_dims == VECTOR_DIMENSIONS:
+        key_field_name = next((field.name for field in existing.fields if getattr(field, "key", False)), None)
+        if (
+            key_field_name == "chunk_id"
+            and vector_field
+            and vector_type == "Collection(Edm.Single)"
+            and vector_dims == VECTOR_DIMENSIONS
+        ):
             print(f"Index '{index_name}' already exists with compatible schema, skipping creation.")
             return
 
@@ -107,8 +114,10 @@ def upload_policies(filepath="fraud_policies.json"):
     with open(filepath, "r") as f:
         docs = json.load(f)
 
-    # compute embedding for each rule
-    for doc in docs:
+    # assign key by JSON array order and compute embedding for each rule
+    for idx, doc in enumerate(docs):
+        doc["chunk_id"] = str(idx + 1)
+
         try:
             emb_resp = openai_client.embeddings.create(model=EMBEDDING_MODEL, input=doc["rule"])
             doc["rule_vector"] = emb_resp.data[0].embedding

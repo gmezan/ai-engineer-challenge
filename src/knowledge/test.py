@@ -57,7 +57,7 @@ def main() -> None:
 		search_text=None,
 		vector_queries=[vector_query],
 		top=TOP_K,
-		select=["policy_id", "rule", "version"],
+		select=["chunk_id", "policy_id", "rule", "version"],
 	)
 
 	print(f"Query: {QUERY_TEXT}")
@@ -70,6 +70,7 @@ def main() -> None:
 		found_any = True
 		score = doc.get("@search.score")
 		print(f"{idx}. score={score}")
+		print(f"   chunk_id={doc.get('chunk_id')}")
 		print(f"   policy_id={doc.get('policy_id')}")
 		print(f"   version={doc.get('version')}")
 		print(f"   rule={doc.get('rule')}")
