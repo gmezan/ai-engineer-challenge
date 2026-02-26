@@ -41,7 +41,7 @@ resource "azurerm_cognitive_deployment" "model_1" {
 
   sku {
     name     = "Standard"
-    capacity = 10
+    capacity = 40
   }
 }
 
@@ -128,6 +128,6 @@ resource "azurerm_cognitive_deployment" "gpt-5-mini" {
 
   sku {
     name     = "GlobalStandard"
-    capacity = 20
+    capacity = 40
   }
 }
