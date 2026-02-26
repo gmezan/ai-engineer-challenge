@@ -40,6 +40,9 @@ graph TB
 
 La orquestación se implementa con `WorkflowBuilder` de Microsoft Agent Framework, usando un grafo dirigido de ejecutores y agentes especializados.
 
+Además, el workflow utiliza `Checkpoint Store` del Agent Framework mediante `FileCheckpointStorage` para persistir estado entre ejecuciones.
+Este mecanismo guarda trazas del proceso y permite seguir la ejecución de cada agente en el flujo.
+
 ### Patrones de concurrencia aplicados
 
 - **Fan-out (paralelismo)**: desde `InputTransactionExecutor` se abren ramas concurrentes hacia:
