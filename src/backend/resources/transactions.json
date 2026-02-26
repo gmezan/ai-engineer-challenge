@@ -20,5 +20,16 @@
     "device_id": "D-02",
     "timestamp": "2025-12-17T23:45:00",
     "merchant_id": "M-002"
+  },
+  {
+    "transaction_id": "T-1003",
+    "customer_id": "CU-001",
+    "amount": 40000.0,
+    "currency": "PEN",
+    "country": "PE",
+    "channel": "mobile",
+    "device_id": "D-02",
+    "timestamp": "2025-12-17T23:45:00",
+    "merchant_id": "M-002"
   }
 ]

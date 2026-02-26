@@ -5,15 +5,26 @@ import os
 from typing import Any
 from datetime import datetime, timezone
 
+from fastapi.middleware.cors import CORSMiddleware
+
 from dotenv import load_dotenv
 from azure.identity import DefaultAzureCredential
 from agent_framework import (
+    Case,
+    Default,
+    FileCheckpointStorage,
+    InMemoryCheckpointStorage,
     Message,
     Workflow,
     WorkflowBuilder,
     WorkflowEvent)
+from fastapi import FastAPI
+import uvicorn
 from agents.debate_agent import DebateAgent
 from agents.decision_arbiter_agent import DecisionArbiterAgent
+from agents.explainability_agent import ExplainabilityAgent
+from agents.human_intervention_executor import HumanInterventionExecutor
+from agents.human_intervention_input_adapter import HumanInterventionInputAdapter
 from agents.input_transaction_executor import InputTransactionExecutor
 from models.Transaction import Transaction
 from agent_framework.azure import AzureOpenAIChatClient
@@ -23,12 +34,38 @@ from agents.external_threat_intel_agent import ExternalThreatIntelAgent
 from agents.internal_policy_agent import InternalPolicyAgent
 from agents.transaction_context_agent import TransactionContextAgent
 
+from agent_framework_ag_ui import AgentFrameworkAgent, add_agent_framework_fastapi_endpoint
+
 from agent_framework.openai import OpenAIResponsesClient
+from agent_framework import WorkflowEvent
+
 
 load_dotenv()
 
 client = AzureOpenAIChatClient(credential=DefaultAzureCredential())
+checkpoint_storage = FileCheckpointStorage('./checkpoints')
 
+UI_VISIBLE_EXECUTORS = {
+    "EvidenceAggregationAgent",
+    "DecisionArbiterAgent",
+    "ExplainabilityAgent",
+    "HumanInterventionExecutor",
+}
+
+
+def ui_event_filter(event: WorkflowEvent) -> bool:
+    """
+    Return True if this event should be sent to the frontend.
+    """
+    # Always allow final output
+    if event.type == "output":
+        return True
+
+    executor_id = getattr(event, "executor_id", None)
+    if not executor_id:
+        return False
+
+    return executor_id in UI_VISIBLE_EXECUTORS
 
 def _build_openai_responses_client() -> OpenAIResponsesClient:
     api_key = os.getenv("OPENAI_API_KEY") or os.getenv("AZURE_OPENAI_API_KEY")
@@ -62,6 +99,9 @@ concurrent_agents = [transaction_context, behavioral_pattern, internal_policy] #
 debate_agent = DebateAgent(client)
 
 decision_arbiter = DecisionArbiterAgent(client)
+explainability_agent = ExplainabilityAgent()
+human_intervention_executor = HumanInterventionExecutor(client)
+human_intervention_input_adapter = HumanInterventionInputAdapter()
 
 # Aggregator agent
 evidence_aggregation = EvidenceAggregationAgent(client)
@@ -69,68 +109,49 @@ evidence_aggregation = EvidenceAggregationAgent(client)
 input_message = "Transaccion T-1001"
 
 
-def _print_messages_trace(messages: list[Message], title: str) -> None:
-    print(f"{title} (count={len(messages)})")
-    for index, msg in enumerate(messages, start=1):
-        payload = msg.to_dict() if hasattr(msg, "to_dict") else {
-            "role": getattr(msg, "role", None),
-            "author_name": getattr(msg, "author_name", None),
-            "text": getattr(msg, "text", None),
-        }
-        print(f"  - message[{index}] role={getattr(msg, 'role', 'unknown')} author={getattr(msg, 'author_name', None)}")
-        print(json.dumps(payload, ensure_ascii=False, indent=2, default=str))
+workflow: Workflow = WorkflowBuilder(start_executor=start_executor, checkpoint_storage=checkpoint_storage) \
+    .add_fan_out_edges(start_executor, concurrent_agents) \
+    .add_fan_in_edges(concurrent_agents, evidence_aggregation) \
+    .add_edge(evidence_aggregation, debate_agent) \
+    .add_fan_in_edges([debate_agent, evidence_aggregation], decision_arbiter) \
+    .add_switch_case_edge_group(
+        decision_arbiter,
+        [
+            Case(
+                condition=lambda result: isinstance(result, dict)
+                and str(result.get("decision", "")).upper() == "ESCALATE_TO_HUMAN",
+                target=human_intervention_input_adapter,
+            ),
+            Default(target=explainability_agent),
+        ],
+    ) \
+    .add_edge(human_intervention_input_adapter, human_intervention_executor) \
+    .build()
 
 
-def _trace_event(event: WorkflowEvent) -> None:
-    print("\n" + "=" * 80)
-    print(f"TRACE event.type={event.type} executor_id={getattr(event, 'executor_id', None)}")
-    data = getattr(event, "data", None)
+app = FastAPI(title="CopilotKit + Microsoft Agent Framework (Python)")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
-    if isinstance(data, list) and data and all(isinstance(item, Message) for item in data):
-        _print_messages_trace(data, "TRACE output message list")
-        return
+ui_agent = AgentFrameworkAgent(
+    agent=workflow.as_agent(),
+    require_confirmation=True
+)
 
-    if hasattr(data, "agent_response"):
-        executor_id = getattr(data, "executor_id", "unknown")
-        print(f"TRACE AgentExecutorResponse from executor={executor_id}")
-        agent_response = getattr(data, "agent_response", None)
-        response_messages = list(getattr(agent_response, "messages", []) or [])
-        if response_messages:
-            _print_messages_trace(response_messages, "TRACE agent_response.messages")
 
-        full_conversation = list(getattr(data, "full_conversation", []) or [])
-        if full_conversation:
-            _print_messages_trace(full_conversation, "TRACE full_conversation")
-        return
-
-    if hasattr(data, "to_dict"):
-        print(json.dumps(data.to_dict(), ensure_ascii=False, indent=2, default=str))
-        return
-
-    print(json.dumps(data, ensure_ascii=False, indent=2, default=str))
-
-async def main() -> None:
-    workflow: Workflow = WorkflowBuilder(start_executor=start_executor) \
-        .add_fan_out_edges(start_executor, concurrent_agents) \
-        .add_fan_in_edges(concurrent_agents, evidence_aggregation) \
-        .add_edge(evidence_aggregation, debate_agent) \
-        .add_fan_in_edges([debate_agent, evidence_aggregation], decision_arbiter) \
-        .build()
-    output_evt: WorkflowEvent  | None = None
-    events = await workflow.run(message=input_message)
-
-    for event in events:
-        #_trace_event(event)
-        if (event.type == "output"):
-            output_evt = event
-
-    print("===== Final Aggregated Conversation (messages) =====")
-    messages: list[Message] | Any = output_evt.data
-
-    for i, msg in enumerate(messages, start=1):
-        name = msg.author_name if msg.author_name else "user"
-        print(f"{'-' * 60}\n\n{i:02d} [{name}]:\n{msg.text}")
+add_agent_framework_fastapi_endpoint(
+    app=app,
+    agent=workflow.as_agent(),  # Expose the workflow directly as an agent endpoint
+    path="/",
+)
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    host = os.getenv("AGENT_HOST", "0.0.0.0")
+    port = int(os.getenv("AGENT_PORT", "8888"))
+    uvicorn.run("main:app", host=host, port=port, reload=True)

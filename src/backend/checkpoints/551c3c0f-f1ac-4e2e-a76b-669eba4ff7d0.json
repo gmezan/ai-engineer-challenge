@@ -1,0 +1,569 @@
+{
+  "workflow_name": "WorkflowBuilder-1cc64458-c89b-4361-bd13-0100563a6d2b",
+  "graph_signature_hash": "1fff57acf02820d226f03516b01af45359182e04b6be6138c8235f076a605950",
+  "checkpoint_id": "551c3c0f-f1ac-4e2e-a76b-669eba4ff7d0",
+  "previous_checkpoint_id": "3461e42b-4440-4518-a037-f330f13b4fae",
+  "timestamp": "2026-02-26T10:17:19.816818+00:00",
+  "messages": {
+    "debate": [
+      {
+        "__pickled__": "gAWVEBcAAAAAAACMKmFnZW50X2ZyYW1ld29yay5fd29ya2Zsb3dzLl9ydW5uZXJfY29udGV4dJSMD1dvcmtmbG93TWVzc2FnZZSTlCmBlH2UKIwEZGF0YZSMKmFnZW50X2ZyYW1ld29yay5fd29ya2Zsb3dzLl9hZ2VudF9leGVjdXRvcpSMFUFnZW50RXhlY3V0b3JSZXNwb25zZZSTlCmBlH2UKIwLZXhlY3V0b3JfaWSUjAZkZWJhdGWUjA5hZ2VudF9yZXNwb25zZZSMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjA1BZ2VudFJlc3BvbnNllJOUKYGUfZQojAhtZXNzYWdlc5RdlGgOjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwJYXNzaXN0YW50lIwIY29udGVudHOUXZRoDowHQ29udGVudJSTlCmBlH2UKIwEdHlwZZSMBHRleHSUjAthbm5vdGF0aW9uc5ROjBVhZGRpdGlvbmFsX3Byb3BlcnRpZXOUfZSMEnJhd19yZXByZXNlbnRhdGlvbpSMIW9wZW5haS50eXBlcy5jaGF0LmNoYXRfY29tcGxldGlvbpSMBkNob2ljZZSTlCmBlH2UKIwIX19kaWN0X1+UfZQojA1maW5pc2hfcmVhc29ulIwEc3RvcJSMBWluZGV4lEsAjAhsb2dwcm9ic5ROjAdtZXNzYWdllIwpb3BlbmFpLnR5cGVzLmNoYXQuY2hhdF9jb21wbGV0aW9uX21lc3NhZ2WUjBVDaGF0Q29tcGxldGlvbk1lc3NhZ2WUk5QpgZR9lChoLH2UKIwHY29udGVudJRYJAgAACoqQXJndW1lbnRvcyBQUk8gRlJBVURFKiogIAotIExhIHRyYW5zYWNjacOzbiBkZSAxODAwIFBFTiBlcyBtw6FzIGRlbCB0cmlwbGUgZGVsIG1vbnRvIHByb21lZGlvIGhhYml0dWFsIGRlIDUwMCBQRU4gZGVsIGNsaWVudGUgQ1UtMDAxLCBsbyBxdWUgZ2VuZXJhIHVuYSBhbGVydGEgcG9yIGluY3JlbWVudG8gc2lnbmlmaWNhdGl2byBlbiBlbCBnYXN0by4gIAotIFNlZ8O6biBsYSBwb2zDrXRpY2EgaW50ZXJuYSBGUC0wMSwgbGEgdHJhbnNhY2Npw7NuIHNlIHJlYWxpesOzIGEgbGFzIDAzOjE1IEFNLCB1biBob3JhcmlvIGZ1ZXJhIGRlbCByYW5nbyB1c3VhbCBkZSAwODowMCBhIDIwOjAwLCBsbyBxdWUgZXMgdW4gaW5kaWNhZG9yIHJlbGV2YW50ZSBkZSBjb21wb3J0YW1pZW50byBhdMOtcGljby4gIAotIExhIGNvbWJpbmFjacOzbiBkZSBtb250byBlbGV2YWRvIHkgaG9yYXJpbyBmdWVyYSBkZWwgcGF0csOzbiBlcyBzdWZpY2llbnRlIHBhcmEgYWN0aXZhciB1bmEgYWNjacOzbiBDSEFMTEVOR0UsIGxvIHF1ZSBpbXBsaWNhIGxhIG5lY2VzaWRhZCBkZSBtYXlvciB2ZXJpZmljYWNpw7NuIGRlIGF1dGVudGljaWRhZCBhbnRlIHBvc2libGUgcmllc2dvLiAgCgoqKkFyZ3VtZW50b3MgUFJPIENMSUVOVEUgKE5PIEZSQVVERSkqKiAgCi0gTGEgb3BlcmFjacOzbiBmdWUgcmVhbGl6YWRhIGRlc2RlIGVsIG1pc21vIHBhw61zIChQZXLDuiksIGNvbiBkaXNwb3NpdGl2byAoRC0wMSkgeSBjYW5hbCAod2ViKSBoYWJpdHVhbGVzIHBhcmEgZWwgY2xpZW50ZSwgc2Vnw7puIGhpc3RvcmlhbCBjb25vY2lkbywgbG8gcXVlIHN1Z2llcmUgY29udGludWlkYWQgZW4gbG9zIHBhdHJvbmVzIGRlIHVzby4gIAotIEVsIGFnZW50ZSB0cmFuc2FjdGlvbl9jb250ZXh0IG5vIGRldGVjdMOzIHNlw7FhbGVzIGlubWVkaWF0YXMgZGUgZnJhdWRlIG5pIHBhdHJvbmVzIGFuw7NtYWxvcywgYXNpZ25hbmRvIHVuIG5pdmVsIGRlIHJpZXNnbyBiYWpvIGEgbW9kZXJhZG8geSByZWNvbWVuZGFuZG8gc29sbyBtb25pdG9yZW8gcnV0aW5hcmlvLiAgCi0gRWwgaG9yYXJpbyBkZSBsYSB0cmFuc2FjY2nDs24gZXN0w6EgZW4gZGlzcHV0YTogbWllbnRyYXMgaW50ZXJuYWxfcG9saWN5IGluZGljYSBob3JhIGZ1ZXJhIGRlIHJhbmdvLCBiZWhhdmlvcmFsX3BhdHRlcm4gc2XDsWFsYSBxdWUgbGEgb3BlcmFjacOzbiBvY3VycmnDsyBkZW50cm8gZGVsIGhvcmFyaW8gaGFiaXR1YWwgKDg6MDAgYSAyMDowMCksIGxvIHF1ZSBhdGVudWFyw61hIGxhIHNvc3BlY2hhLiAgCi0gTGEgcmVjb21lbmRhY2nDs24gZGVsIGFnZW50ZSBiZWhhdmlvcmFsX3BhdHRlcm4gZXMgcmV2aXNpw7NuIGNvbnRleHR1YWwgYWRpY2lvbmFsLCBubyBibG9xdWVvIGlubWVkaWF0byBuaSByZWNoYXpvLCBzZcOxYWxhbmRvIHF1ZSBlbCBjb21wb3J0YW1pZW50byBnZW5lcmFsIGVzIGNvbnNpc3RlbnRlLiAgCgoqKkNvbmNsdXNpw7NuIGNvbXBhcmF0aXZhIGZpbmFsKiogIApFbCBkZWJhdGUgZ2lyYSBlbiB0b3JubyBhbCBtYXlvciBtb250byB5IGVsIGhvcmFyaW8gZGUgbGEgdHJhbnNhY2Npw7NuLiBBdW5xdWUgZWwgaW5jcmVtZW50byBzaWduaWZpY2F0aXZvIGVuIG1vbnRvIHkgZWwgaG9yYXJpbyBhdMOtcGljbyBzZcOxYWxhZG8gcG9yIGludGVybmFsX3BvbGljeSBzdWdpZXJlbiByaWVzZ28geSBsYSBuZWNlc2lkYWQgZGUgdW4gY2hhbGxlbmdlLCBsYSBhdXNlbmNpYSBkZSBzZcOxYWxlcyBhZGljaW9uYWxlcyBkZSBmcmF1ZGUsIGxhIGNvaW5jaWRlbmNpYSBlbiBwYcOtcywgZGlzcG9zaXRpdm8geSBjYW5hbCwgeSBsYSBldmFsdWFjacOzbiBkZSByaWVzZ28gYmFqYS1tb2RlcmFkYSBkZSBvdHJvcyBhZ2VudGVzLCBwb25lbiBlbiBkdWRhIGxhIGV4aXN0ZW5jaWEgZGUgdW4gZnJhdWRlIGNsYXJvLiBQb3IgdGFudG8sIGVsIGNhc28gcHJlc2VudGEgaW5kaWNhZG9yZXMgcXVlIGFjb25zZWphbiBwcmVjYXVjacOzbiB5IHNlZ3VpbWllbnRvIGRldGFsbGFkbywgc2luIGVtYmFyZ28gbm8gYXBvcnRhbiBldmlkZW5jaWEgY29uY2x1eWVudGUgZGUgcXVlIHNlIHRyYXRlIGRlIHVuYSB0cmFuc2FjY2nDs24gZnJhdWR1bGVudGEulIwHcmVmdXNhbJROaBmMCWFzc2lzdGFudJRoI12UjAVhdWRpb5ROjA1mdW5jdGlvbl9jYWxslE6MCnRvb2xfY2FsbHOUTnWMEl9fcHlkYW50aWNfZXh0cmFfX5R9lIwXX19weWRhbnRpY19maWVsZHNfc2V0X1+Uj5QoaBloI2g5aDuQjBRfX3B5ZGFudGljX3ByaXZhdGVfX5ROdWJ1aEF9lIwWY29udGVudF9maWx0ZXJfcmVzdWx0c5R9lCiMBGhhdGWUfZQojAhmaWx0ZXJlZJSJjAhzZXZlcml0eZSMBHNhZmWUdYwJc2VsZl9oYXJtlH2UKGhLiWhMjARzYWZllHWMBnNleHVhbJR9lChoS4loTIwEc2FmZZR1jAh2aW9sZW5jZZR9lChoS4loTIwEc2FmZZR1dXNoQ4+UKGguaDBoMmgxkGhFTnViaCJoOowOcHJvdGVjdGVkX2RhdGGUTowDdXJplE6MCm1lZGlhX3R5cGWUTmgyTowKZXJyb3JfY29kZZROjA1lcnJvcl9kZXRhaWxzlE6MDXVzYWdlX2RldGFpbHOUTowHY2FsbF9pZJROjARuYW1llE6MCWFyZ3VtZW50c5ROjAlleGNlcHRpb26UTowGcmVzdWx0lE6MB2ZpbGVfaWSUTowPdmVjdG9yX3N0b3JlX2lklE6MBmlucHV0c5ROjAdvdXRwdXRzlE6MCGltYWdlX2lklE6MCXRvb2xfbmFtZZROjAtzZXJ2ZXJfbmFtZZROjAZvdXRwdXSUTowCaWSUTmg/TowSdXNlcl9pbnB1dF9yZXF1ZXN0lE6MCGFwcHJvdmVklE51YmGMC2F1dGhvcl9uYW1llGgMjAptZXNzYWdlX2lklE5oJH2UaCZOdWJhjAtyZXNwb25zZV9pZJSMJmNoYXRjbXBsLUREU2liSTM2OWxKNWNLTTB3MGN0SnRsaUxlbFdalIwIYWdlbnRfaWSUTowKY3JlYXRlZF9hdJSMGzIwMjYtMDItMjZUMTA6MTc6MDkuMDAwMDAwWpRoXX2UKIwRaW5wdXRfdG9rZW5fY291bnSUTRwCjBJvdXRwdXRfdG9rZW5fY291bnSUTcEBjBF0b3RhbF90b2tlbl9jb3VudJRN3QN1jAZfdmFsdWWUTowQX3Jlc3BvbnNlX2Zvcm1hdJROjA1fdmFsdWVfcGFyc2VklIloJH2UKIwSc3lzdGVtX2ZpbmdlcnByaW50lIwNZnBfYjZmNDQ1ZmMxY5RoMU51jBJjb250aW51YXRpb25fdG9rZW6UTmgmaA6MDENoYXRSZXNwb25zZZSTlCmBlH2UKGgTXZRoF2FocWhyjA9jb252ZXJzYXRpb25faWSUTowIbW9kZWxfaWSUjBdncHQtNC4xLW1pbmktMjAyNS0wNC0xNJRodGh1aC5oL2hdaHZoek5oe05ofIloJGh9aIBOaCZOdWJ1YowRZnVsbF9jb252ZXJzYXRpb26UXZQoaBYpgZR9lChoGYwEdXNlcpRoG12UaB4pgZR9lChoIWgiaCNOaCR9lGgmTmgiWAQHAABBZ2VudGU6IHRyYW5zYWN0aW9uX2NvbnRleHQgIApSZXN1bWVuOiBMYSB0cmFuc2FjY2nDs24gVC0xMDAxIHBvciB1biBtb250byBkZSAxODAwIFBFTiBzZSByZWFsaXrDsyB2w61hIHdlYiBkZXNkZSBlbCBkaXNwb3NpdGl2byBELTAxIGVuIFBlcsO6LiBObyBzZSBkZXRlY3Rhcm9uIHNlw7FhbGVzIGlubWVkaWF0YXMgZGUgZnJhdWRlIHJlbGFjaW9uYWRhcyBjb24gcGHDrXMgbyBkaXNwb3NpdGl2bywgbmkgcGF0cm9uZXMgYW7Ds21hbG9zIGFwYXJlbnRlcy4gRWwgbml2ZWwgZGUgcmllc2dvIGFzaWduYWRvIGVzIGJham8gYSBtb2RlcmFkbywgY29uIHJlY29tZW5kYWNpw7NuIGRlIG1vbml0b3JlbyBlc3TDoW5kYXIgeSB2YWxpZGFjacOzbiBkZSBpZGVudGlkYWQgZW4gY2FzbyBkZSBhY3RpdmlkYWQgaW51c3VhbCBmdXR1cmEgZGVsIGNsaWVudGUgQ1UtMDAxIG8gZGlzcG9zaXRpdm8gRC0wMS4gIApDb25jbHVzacOzbjogUmllc2dvIGJham8gYSBtb2RlcmFkbywgc2luIGluZGljaW9zIGNsYXJvcyBkZSBmcmF1ZGU7IHNlIHN1Z2llcmUgc2VndWltaWVudG8gdXN1YWwuCgpBZ2VudGU6IGJlaGF2aW9yYWxfcGF0dGVybiAgClJlc3VtZW46IExhIHRyYW5zYWNjacOzbiBULTEwMDEgZGUgMTgwMCBQRU4gZXMgbcOhcyBkZSB0cmVzIHZlY2VzIGVsIG1vbnRvIHByb21lZGlvIGhhYml0dWFsICg1MDAgUEVOKSBkZWwgY2xpZW50ZSBDVS0wMDEuIE5vIG9ic3RhbnRlLCBsYSBvcGVyYWNpw7NuIHNlIGVmZWN0dcOzIGVuIGVsIHBhw61zLCBjb24gZGlzcG9zaXRpdm8geSBjYW5hbCBoYWJpdHVhbGVzLCB5IGRlbnRybyBkZWwgaG9yYXJpbyB1c3VhbCAoODowMCBhIDIwOjAwKS4gRWwgaW5jcmVtZW50byBlbiBlbCBtb250byBnZW5lcmEgdW5hIHNlw7FhbCBkZSBhbGVydGEsIHBlcm8gbGEgY29pbmNpZGVuY2lhIGNvbiBlbCBwYXRyw7NuIGhpc3TDs3JpY28gYXRlbsO6YSBlbCBuaXZlbCBkZSByaWVzZ28uIFNlIHJlY29taWVuZGEgcmV2aXNpw7NuIGFkaWNpb25hbCBkZWwgY29udGV4dG8gZGVsIGdhc3RvLiAgCkNvbmNsdXNpw7NuOiBSaWVzZ28gbW9kZXJhZG8gcG9yIG1vbnRvIGVsZXZhZG8gcGVybyBjb21wb3J0YW1pZW50byBjb25zaXN0ZW50ZTsgc3VnZXJlbmNpYSBkZSBhbsOhbGlzaXMgY29udGV4dHVhbCBhZGljaW9uYWwuCgpBZ2VudGU6IGludGVybmFsX3BvbGljeSAgClJlc3VtZW46IExhIHRyYW5zYWNjacOzbiBULTEwMDEgcHJlc2VudGEgdW4gbW9udG8gMTgwMCBQRU4sIHF1ZSBleGNlZGUgZW4gbcOhcyBkZSAzIHZlY2VzIGVsIHByb21lZGlvIGhhYml0dWFsIGRlbCBjbGllbnRlICg1MDAgUEVOKSwgeSBzZSByZWFsaXrDsyBhIGxhcyAwMzoxNSBBTSwgZnVlcmEgZGVsIGhvcmFyaW8gaGFiaXR1YWwgKDA4OjAwIGEgMjA6MDApLiBBdW5xdWUgcGHDrXMgeSBkaXNwb3NpdGl2byBjb2luY2lkZW4gY29uIGVsIGhpc3RvcmlhbCwgbGEgcG9sw610aWNhIEZQLTAxIGluZGljYSBxdWUgZXN0YSBjb21iaW5hY2nDs24gZGUgbW9udG8gZWxldmFkbyB5IGhvcmFyaW8gZnVlcmEgZGUgcmFuZ28gcmVxdWllcmUgdW4gQ0hBTExFTkdFIHBhcmEgdmVyaWZpY2FyIGF1dGVudGljaWRhZC4gTm8gYXBsaWNhIGVzY2FsYW1pZW50byBodW1hbm8gcG9ycXVlIHBhw61zIHkgZGlzcG9zaXRpdm8gc29uIGhhYml0dWFsZXMuICAKQ29uY2x1c2nDs246IEFwbGljYSBhY2Npw7NuIENIQUxMRU5HRSBzZWfDum4gcG9sw610aWNhIGludGVybmEgRlAtMDEsIHZlcnNpb24gMjAyNS4xLCBkZWJpZG8gYSBtb250byB5IGhvcmFyaW8gZnVlcmEgZGVsIHBhdHLDs24gbm9ybWFsLpRoWE5oWU5oWk5oMk5oW05oXE5oXU5oXk5oX05oYE5oYU5oYk5oY05oZE5oZU5oZk5oZ05oaE5oaU5oak5oa05oP05obE5obU51YmFobk5ob05oJH2UaCZOdWJoF2V1YowJc291cmNlX2lklGgMjAl0YXJnZXRfaWSUTmghaACMC01lc3NhZ2VUeXBllJOUjAhzdGFuZGFyZJSFlFKUjA50cmFjZV9jb250ZXh0c5ROjA9zb3VyY2Vfc3Bhbl9pZHOUTowbb3JpZ2luYWxfcmVxdWVzdF9pbmZvX2V2ZW50lE51Yi4=",
+        "__type__": "agent_framework._workflows._runner_context:WorkflowMessage"
+      }
+    ]
+  },
+  "state": {
+    "_workflow_run_kwargs": {},
+    "_executor_state": {
+      "input_transaction_executor": {
+        "cache": [],
+        "full_conversation": [
+          {
+            "__pickled__": "gAWVHwIAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwEdXNlcpSMCGNvbnRlbnRzlF2UaACMB0NvbnRlbnSUk5QpgZR9lCiMBHR5cGWUjAR0ZXh0lIwLYW5ub3RhdGlvbnOUTowVYWRkaXRpb25hbF9wcm9wZXJ0aWVzlH2UjBJyYXdfcmVwcmVzZW50YXRpb26UTmgOjBJUcmFuc2FjY2lvbiBULTEwMDGUjA5wcm90ZWN0ZWRfZGF0YZROjAN1cmmUTowKbWVkaWFfdHlwZZROjAdtZXNzYWdllE6MCmVycm9yX2NvZGWUTowNZXJyb3JfZGV0YWlsc5ROjA11c2FnZV9kZXRhaWxzlE6MB2NhbGxfaWSUTowEbmFtZZROjAlhcmd1bWVudHOUTowJZXhjZXB0aW9ulE6MBnJlc3VsdJROjAdmaWxlX2lklE6MD3ZlY3Rvcl9zdG9yZV9pZJROjAZpbnB1dHOUTowHb3V0cHV0c5ROjAhpbWFnZV9pZJROjAl0b29sX25hbWWUTowLc2VydmVyX25hbWWUTowGb3V0cHV0lE6MAmlklE6MDWZ1bmN0aW9uX2NhbGyUTowSdXNlcl9pbnB1dF9yZXF1ZXN0lE6MCGFwcHJvdmVklE51YmGMC2F1dGhvcl9uYW1llE6MCm1lc3NhZ2VfaWSUTmgQfZRoEk51Yi4=",
+            "__type__": "agent_framework._types:Message"
+          },
+          {
+            "__pickled__": "gAWVPQMAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwJYXNzaXN0YW50lIwIY29udGVudHOUXZRoAIwHQ29udGVudJSTlCmBlH2UKIwEdHlwZZSMDWZ1bmN0aW9uX2NhbGyUjAthbm5vdGF0aW9uc5ROjBVhZGRpdGlvbmFsX3Byb3BlcnRpZXOUfZSMEnJhd19yZXByZXNlbnRhdGlvbpSMPG9wZW5haS50eXBlcy5jaGF0LmNoYXRfY29tcGxldGlvbl9tZXNzYWdlX2Z1bmN0aW9uX3Rvb2xfY2FsbJSMCEZ1bmN0aW9ulJOUKYGUfZQojAhfX2RpY3RfX5R9lCiMCWFyZ3VtZW50c5SMG3sidHJhbnNhY3Rpb25faWQiOiJULTEwMDEifZSMBG5hbWWUjBhzZWFyY2hfdHJhbnNhY3Rpb25fYnlfaWSUdYwSX19weWRhbnRpY19leHRyYV9flH2UjBdfX3B5ZGFudGljX2ZpZWxkc19zZXRfX5SPlChoHGgakIwUX19weWRhbnRpY19wcml2YXRlX1+UTnVijAR0ZXh0lE6MDnByb3RlY3RlZF9kYXRhlE6MA3VyaZROjAptZWRpYV90eXBllE6MB21lc3NhZ2WUTowKZXJyb3JfY29kZZROjA1lcnJvcl9kZXRhaWxzlE6MDXVzYWdlX2RldGFpbHOUTowHY2FsbF9pZJSMHWNhbGxfMHhqZnUxUVRMbkUyeVpmSEVGTE1XZ2UzlGgcaB1oGmgbjAlleGNlcHRpb26UTowGcmVzdWx0lE6MB2ZpbGVfaWSUTowPdmVjdG9yX3N0b3JlX2lklE6MBmlucHV0c5ROjAdvdXRwdXRzlE6MCGltYWdlX2lklE6MCXRvb2xfbmFtZZROjAtzZXJ2ZXJfbmFtZZROjAZvdXRwdXSUTowCaWSUTmgOTowSdXNlcl9pbnB1dF9yZXF1ZXN0lE6MCGFwcHJvdmVklE51YmGMC2F1dGhvcl9uYW1llIwaaW5wdXRfdHJhbnNhY3Rpb25fZXhlY3V0b3KUjAptZXNzYWdlX2lklE5oEH2UaBJOdWIu",
+            "__type__": "agent_framework._types:Message"
+          },
+          {
+            "__pickled__": "gAWVUgMAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwEdG9vbJSMCGNvbnRlbnRzlF2UaACMB0NvbnRlbnSUk5QpgZR9lCiMBHR5cGWUjA9mdW5jdGlvbl9yZXN1bHSUjAthbm5vdGF0aW9uc5ROjBVhZGRpdGlvbmFsX3Byb3BlcnRpZXOUfZSMEnJhd19yZXByZXNlbnRhdGlvbpROjAR0ZXh0lE6MDnByb3RlY3RlZF9kYXRhlE6MA3VyaZROjAptZWRpYV90eXBllE6MB21lc3NhZ2WUTowKZXJyb3JfY29kZZROjA1lcnJvcl9kZXRhaWxzlE6MDXVzYWdlX2RldGFpbHOUTowHY2FsbF9pZJSMHWNhbGxfMHhqZnUxUVRMbkUyeVpmSEVGTE1XZ2UzlIwEbmFtZZROjAlhcmd1bWVudHOUTowJZXhjZXB0aW9ulE6MBnJlc3VsdJSM+nsidHJhbnNhY3Rpb25faWQiOiAiVC0xMDAxIiwgImN1c3RvbWVyX2lkIjogIkNVLTAwMSIsICJhbW91bnQiOiAxODAwLCAiY3VycmVuY3kiOiAiUEVOIiwgImNvdW50cnkiOiAiUEUiLCAiY2hhbm5lbCI6ICJ3ZWIiLCAiZGV2aWNlX2lkIjogIkQtMDEiLCAidGltZXN0YW1wIjogIjIwMjUtMTItMTdUMDM6MTU6MDAiLCAibWVyY2hhbnRfaWQiOiAiTS0wMDEiLCAiaWQiOiAiYjU3ODU0NmQtZGQ3OC00ZWIxLWIzNGMtZGY5OTQ1NzAxNjliIn2UjAdmaWxlX2lklE6MD3ZlY3Rvcl9zdG9yZV9pZJROjAZpbnB1dHOUTowHb3V0cHV0c5ROjAhpbWFnZV9pZJROjAl0b29sX25hbWWUTowLc2VydmVyX25hbWWUTowGb3V0cHV0lE6MAmlklE6MDWZ1bmN0aW9uX2NhbGyUTowSdXNlcl9pbnB1dF9yZXF1ZXN0lE6MCGFwcHJvdmVklE51YmGMC2F1dGhvcl9uYW1llIwaaW5wdXRfdHJhbnNhY3Rpb25fZXhlY3V0b3KUjAptZXNzYWdlX2lklE5oEH2UaBJOdWIu",
+            "__type__": "agent_framework._types:Message"
+          },
+          {
+            "__pickled__": "gAWVbwUAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwJYXNzaXN0YW50lIwIY29udGVudHOUXZRoAIwHQ29udGVudJSTlCmBlH2UKIwEdHlwZZSMBHRleHSUjAthbm5vdGF0aW9uc5ROjBVhZGRpdGlvbmFsX3Byb3BlcnRpZXOUfZSMEnJhd19yZXByZXNlbnRhdGlvbpSMIW9wZW5haS50eXBlcy5jaGF0LmNoYXRfY29tcGxldGlvbpSMBkNob2ljZZSTlCmBlH2UKIwIX19kaWN0X1+UfZQojA1maW5pc2hfcmVhc29ulIwEc3RvcJSMBWluZGV4lEsAjAhsb2dwcm9ic5ROjAdtZXNzYWdllIwpb3BlbmFpLnR5cGVzLmNoYXQuY2hhdF9jb21wbGV0aW9uX21lc3NhZ2WUjBVDaGF0Q29tcGxldGlvbk1lc3NhZ2WUk5QpgZR9lChoGH2UKIwHY29udGVudJRYMgEAAHsidHJhbnNhY3Rpb24iOiJ7XCJ0cmFuc2FjdGlvbl9pZFwiOiBcIlQtMTAwMVwiLCBcImN1c3RvbWVyX2lkXCI6IFwiQ1UtMDAxXCIsIFwiYW1vdW50XCI6IDE4MDAsIFwiY3VycmVuY3lcIjogXCJQRU5cIiwgXCJjb3VudHJ5XCI6IFwiUEVcIiwgXCJjaGFubmVsXCI6IFwid2ViXCIsIFwiZGV2aWNlX2lkXCI6IFwiRC0wMVwiLCBcInRpbWVzdGFtcFwiOiBcIjIwMjUtMTItMTdUMDM6MTU6MDBcIiwgXCJtZXJjaGFudF9pZFwiOiBcIk0tMDAxXCIsIFwiaWRcIjogXCJiNTc4NTQ2ZC1kZDc4LTRlYjEtYjM0Yy1kZjk5NDU3MDE2OWJcIn0ifZSMB3JlZnVzYWyUTmgFjAlhc3Npc3RhbnSUaA9dlIwFYXVkaW+UTowNZnVuY3Rpb25fY2FsbJROjAp0b29sX2NhbGxzlE51jBJfX3B5ZGFudGljX2V4dHJhX1+UfZSMF19fcHlkYW50aWNfZmllbGRzX3NldF9flI+UKGgFaA9oJWgnkIwUX19weWRhbnRpY19wcml2YXRlX1+UTnVidWgtfZSMFmNvbnRlbnRfZmlsdGVyX3Jlc3VsdHOUfZQojARoYXRllH2UKIwIZmlsdGVyZWSUiYwIc2V2ZXJpdHmUjARzYWZllHWMCXNlbGZfaGFybZR9lChoN4loOIwEc2FmZZR1jAZzZXh1YWyUfZQoaDeJaDiMBHNhZmWUdYwIdmlvbGVuY2WUfZQoaDeJaDiMBHNhZmWUdXVzaC+PlChoGmgcaB5oHZBoMU51YmgOaCaMDnByb3RlY3RlZF9kYXRhlE6MA3VyaZROjAptZWRpYV90eXBllE5oHk6MCmVycm9yX2NvZGWUTowNZXJyb3JfZGV0YWlsc5ROjA11c2FnZV9kZXRhaWxzlE6MB2NhbGxfaWSUTowEbmFtZZROjAlhcmd1bWVudHOUTowJZXhjZXB0aW9ulE6MBnJlc3VsdJROjAdmaWxlX2lklE6MD3ZlY3Rvcl9zdG9yZV9pZJROjAZpbnB1dHOUTowHb3V0cHV0c5ROjAhpbWFnZV9pZJROjAl0b29sX25hbWWUTowLc2VydmVyX25hbWWUTowGb3V0cHV0lE6MAmlklE5oK06MEnVzZXJfaW5wdXRfcmVxdWVzdJROjAhhcHByb3ZlZJROdWJhjAthdXRob3JfbmFtZZSMGmlucHV0X3RyYW5zYWN0aW9uX2V4ZWN1dG9ylIwKbWVzc2FnZV9pZJROaBB9lGgSTnViLg==",
+            "__type__": "agent_framework._types:Message"
+          }
+        ],
+        "agent_session": {
+          "type": "session",
+          "session_id": "ca635a46-65bd-4d41-ba45-55af3bfdeb48",
+          "service_session_id": null,
+          "state": {
+            "in_memory": {
+              "messages": [
+                {
+                  "type": "message",
+                  "role": "user",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "Transaccion T-1001",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "additional_properties": {}
+                },
+                {
+                  "type": "message",
+                  "role": "assistant",
+                  "contents": [
+                    {
+                      "type": "function_call",
+                      "call_id": "call_0xjfu1QTLnE2yZfHEFLMWge3",
+                      "name": "search_transaction_by_id",
+                      "arguments": "{\"transaction_id\":\"T-1001\"}",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "author_name": "input_transaction_executor",
+                  "additional_properties": {}
+                },
+                {
+                  "type": "message",
+                  "role": "tool",
+                  "contents": [
+                    {
+                      "type": "function_result",
+                      "call_id": "call_0xjfu1QTLnE2yZfHEFLMWge3",
+                      "result": "{\"transaction_id\": \"T-1001\", \"customer_id\": \"CU-001\", \"amount\": 1800, \"currency\": \"PEN\", \"country\": \"PE\", \"channel\": \"web\", \"device_id\": \"D-01\", \"timestamp\": \"2025-12-17T03:15:00\", \"merchant_id\": \"M-001\", \"id\": \"b578546d-dd78-4eb1-b34c-df994570169b\"}",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "author_name": "input_transaction_executor",
+                  "additional_properties": {}
+                },
+                {
+                  "type": "message",
+                  "role": "assistant",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "{\"transaction\":\"{\\\"transaction_id\\\": \\\"T-1001\\\", \\\"customer_id\\\": \\\"CU-001\\\", \\\"amount\\\": 1800, \\\"currency\\\": \\\"PEN\\\", \\\"country\\\": \\\"PE\\\", \\\"channel\\\": \\\"web\\\", \\\"device_id\\\": \\\"D-01\\\", \\\"timestamp\\\": \\\"2025-12-17T03:15:00\\\", \\\"merchant_id\\\": \\\"M-001\\\", \\\"id\\\": \\\"b578546d-dd78-4eb1-b34c-df994570169b\\\"}\"}",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "author_name": "input_transaction_executor",
+                  "additional_properties": {}
+                }
+              ]
+            }
+          }
+        },
+        "pending_agent_requests": {},
+        "pending_responses_to_agent": []
+      },
+      "transaction_context": {
+        "cache": [],
+        "full_conversation": [
+          {
+            "__pickled__": "gAWVHwIAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwEdXNlcpSMCGNvbnRlbnRzlF2UaACMB0NvbnRlbnSUk5QpgZR9lCiMBHR5cGWUjAR0ZXh0lIwLYW5ub3RhdGlvbnOUTowVYWRkaXRpb25hbF9wcm9wZXJ0aWVzlH2UjBJyYXdfcmVwcmVzZW50YXRpb26UTmgOjBJUcmFuc2FjY2lvbiBULTEwMDGUjA5wcm90ZWN0ZWRfZGF0YZROjAN1cmmUTowKbWVkaWFfdHlwZZROjAdtZXNzYWdllE6MCmVycm9yX2NvZGWUTowNZXJyb3JfZGV0YWlsc5ROjA11c2FnZV9kZXRhaWxzlE6MB2NhbGxfaWSUTowEbmFtZZROjAlhcmd1bWVudHOUTowJZXhjZXB0aW9ulE6MBnJlc3VsdJROjAdmaWxlX2lklE6MD3ZlY3Rvcl9zdG9yZV9pZJROjAZpbnB1dHOUTowHb3V0cHV0c5ROjAhpbWFnZV9pZJROjAl0b29sX25hbWWUTowLc2VydmVyX25hbWWUTowGb3V0cHV0lE6MAmlklE6MDWZ1bmN0aW9uX2NhbGyUTowSdXNlcl9pbnB1dF9yZXF1ZXN0lE6MCGFwcHJvdmVklE51YmGMC2F1dGhvcl9uYW1llE6MCm1lc3NhZ2VfaWSUTmgQfZRoEk51Yi4=",
+            "__type__": "agent_framework._types:Message"
+          },
+          {
+            "__pickled__": "gAWVPQMAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwJYXNzaXN0YW50lIwIY29udGVudHOUXZRoAIwHQ29udGVudJSTlCmBlH2UKIwEdHlwZZSMDWZ1bmN0aW9uX2NhbGyUjAthbm5vdGF0aW9uc5ROjBVhZGRpdGlvbmFsX3Byb3BlcnRpZXOUfZSMEnJhd19yZXByZXNlbnRhdGlvbpSMPG9wZW5haS50eXBlcy5jaGF0LmNoYXRfY29tcGxldGlvbl9tZXNzYWdlX2Z1bmN0aW9uX3Rvb2xfY2FsbJSMCEZ1bmN0aW9ulJOUKYGUfZQojAhfX2RpY3RfX5R9lCiMCWFyZ3VtZW50c5SMG3sidHJhbnNhY3Rpb25faWQiOiJULTEwMDEifZSMBG5hbWWUjBhzZWFyY2hfdHJhbnNhY3Rpb25fYnlfaWSUdYwSX19weWRhbnRpY19leHRyYV9flH2UjBdfX3B5ZGFudGljX2ZpZWxkc19zZXRfX5SPlChoHGgakIwUX19weWRhbnRpY19wcml2YXRlX1+UTnVijAR0ZXh0lE6MDnByb3RlY3RlZF9kYXRhlE6MA3VyaZROjAptZWRpYV90eXBllE6MB21lc3NhZ2WUTowKZXJyb3JfY29kZZROjA1lcnJvcl9kZXRhaWxzlE6MDXVzYWdlX2RldGFpbHOUTowHY2FsbF9pZJSMHWNhbGxfMHhqZnUxUVRMbkUyeVpmSEVGTE1XZ2UzlGgcaB1oGmgbjAlleGNlcHRpb26UTowGcmVzdWx0lE6MB2ZpbGVfaWSUTowPdmVjdG9yX3N0b3JlX2lklE6MBmlucHV0c5ROjAdvdXRwdXRzlE6MCGltYWdlX2lklE6MCXRvb2xfbmFtZZROjAtzZXJ2ZXJfbmFtZZROjAZvdXRwdXSUTowCaWSUTmgOTowSdXNlcl9pbnB1dF9yZXF1ZXN0lE6MCGFwcHJvdmVklE51YmGMC2F1dGhvcl9uYW1llIwaaW5wdXRfdHJhbnNhY3Rpb25fZXhlY3V0b3KUjAptZXNzYWdlX2lklE5oEH2UaBJOdWIu",
+            "__type__": "agent_framework._types:Message"
+          },
+          {
+            "__pickled__": "gAWVUgMAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwEdG9vbJSMCGNvbnRlbnRzlF2UaACMB0NvbnRlbnSUk5QpgZR9lCiMBHR5cGWUjA9mdW5jdGlvbl9yZXN1bHSUjAthbm5vdGF0aW9uc5ROjBVhZGRpdGlvbmFsX3Byb3BlcnRpZXOUfZSMEnJhd19yZXByZXNlbnRhdGlvbpROjAR0ZXh0lE6MDnByb3RlY3RlZF9kYXRhlE6MA3VyaZROjAptZWRpYV90eXBllE6MB21lc3NhZ2WUTowKZXJyb3JfY29kZZROjA1lcnJvcl9kZXRhaWxzlE6MDXVzYWdlX2RldGFpbHOUTowHY2FsbF9pZJSMHWNhbGxfMHhqZnUxUVRMbkUyeVpmSEVGTE1XZ2UzlIwEbmFtZZROjAlhcmd1bWVudHOUTowJZXhjZXB0aW9ulE6MBnJlc3VsdJSM+nsidHJhbnNhY3Rpb25faWQiOiAiVC0xMDAxIiwgImN1c3RvbWVyX2lkIjogIkNVLTAwMSIsICJhbW91bnQiOiAxODAwLCAiY3VycmVuY3kiOiAiUEVOIiwgImNvdW50cnkiOiAiUEUiLCAiY2hhbm5lbCI6ICJ3ZWIiLCAiZGV2aWNlX2lkIjogIkQtMDEiLCAidGltZXN0YW1wIjogIjIwMjUtMTItMTdUMDM6MTU6MDAiLCAibWVyY2hhbnRfaWQiOiAiTS0wMDEiLCAiaWQiOiAiYjU3ODU0NmQtZGQ3OC00ZWIxLWIzNGMtZGY5OTQ1NzAxNjliIn2UjAdmaWxlX2lklE6MD3ZlY3Rvcl9zdG9yZV9pZJROjAZpbnB1dHOUTowHb3V0cHV0c5ROjAhpbWFnZV9pZJROjAl0b29sX25hbWWUTowLc2VydmVyX25hbWWUTowGb3V0cHV0lE6MAmlklE6MDWZ1bmN0aW9uX2NhbGyUTowSdXNlcl9pbnB1dF9yZXF1ZXN0lE6MCGFwcHJvdmVklE51YmGMC2F1dGhvcl9uYW1llIwaaW5wdXRfdHJhbnNhY3Rpb25fZXhlY3V0b3KUjAptZXNzYWdlX2lklE5oEH2UaBJOdWIu",
+            "__type__": "agent_framework._types:Message"
+          },
+          {
+            "__pickled__": "gAWVbwUAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwJYXNzaXN0YW50lIwIY29udGVudHOUXZRoAIwHQ29udGVudJSTlCmBlH2UKIwEdHlwZZSMBHRleHSUjAthbm5vdGF0aW9uc5ROjBVhZGRpdGlvbmFsX3Byb3BlcnRpZXOUfZSMEnJhd19yZXByZXNlbnRhdGlvbpSMIW9wZW5haS50eXBlcy5jaGF0LmNoYXRfY29tcGxldGlvbpSMBkNob2ljZZSTlCmBlH2UKIwIX19kaWN0X1+UfZQojA1maW5pc2hfcmVhc29ulIwEc3RvcJSMBWluZGV4lEsAjAhsb2dwcm9ic5ROjAdtZXNzYWdllIwpb3BlbmFpLnR5cGVzLmNoYXQuY2hhdF9jb21wbGV0aW9uX21lc3NhZ2WUjBVDaGF0Q29tcGxldGlvbk1lc3NhZ2WUk5QpgZR9lChoGH2UKIwHY29udGVudJRYMgEAAHsidHJhbnNhY3Rpb24iOiJ7XCJ0cmFuc2FjdGlvbl9pZFwiOiBcIlQtMTAwMVwiLCBcImN1c3RvbWVyX2lkXCI6IFwiQ1UtMDAxXCIsIFwiYW1vdW50XCI6IDE4MDAsIFwiY3VycmVuY3lcIjogXCJQRU5cIiwgXCJjb3VudHJ5XCI6IFwiUEVcIiwgXCJjaGFubmVsXCI6IFwid2ViXCIsIFwiZGV2aWNlX2lkXCI6IFwiRC0wMVwiLCBcInRpbWVzdGFtcFwiOiBcIjIwMjUtMTItMTdUMDM6MTU6MDBcIiwgXCJtZXJjaGFudF9pZFwiOiBcIk0tMDAxXCIsIFwiaWRcIjogXCJiNTc4NTQ2ZC1kZDc4LTRlYjEtYjM0Yy1kZjk5NDU3MDE2OWJcIn0ifZSMB3JlZnVzYWyUTmgFjAlhc3Npc3RhbnSUaA9dlIwFYXVkaW+UTowNZnVuY3Rpb25fY2FsbJROjAp0b29sX2NhbGxzlE51jBJfX3B5ZGFudGljX2V4dHJhX1+UfZSMF19fcHlkYW50aWNfZmllbGRzX3NldF9flI+UKGgFaA9oJWgnkIwUX19weWRhbnRpY19wcml2YXRlX1+UTnVidWgtfZSMFmNvbnRlbnRfZmlsdGVyX3Jlc3VsdHOUfZQojARoYXRllH2UKIwIZmlsdGVyZWSUiYwIc2V2ZXJpdHmUjARzYWZllHWMCXNlbGZfaGFybZR9lChoN4loOIwEc2FmZZR1jAZzZXh1YWyUfZQoaDeJaDiMBHNhZmWUdYwIdmlvbGVuY2WUfZQoaDeJaDiMBHNhZmWUdXVzaC+PlChoGmgcaB5oHZBoMU51YmgOaCaMDnByb3RlY3RlZF9kYXRhlE6MA3VyaZROjAptZWRpYV90eXBllE5oHk6MCmVycm9yX2NvZGWUTowNZXJyb3JfZGV0YWlsc5ROjA11c2FnZV9kZXRhaWxzlE6MB2NhbGxfaWSUTowEbmFtZZROjAlhcmd1bWVudHOUTowJZXhjZXB0aW9ulE6MBnJlc3VsdJROjAdmaWxlX2lklE6MD3ZlY3Rvcl9zdG9yZV9pZJROjAZpbnB1dHOUTowHb3V0cHV0c5ROjAhpbWFnZV9pZJROjAl0b29sX25hbWWUTowLc2VydmVyX25hbWWUTowGb3V0cHV0lE6MAmlklE5oK06MEnVzZXJfaW5wdXRfcmVxdWVzdJROjAhhcHByb3ZlZJROdWJhjAthdXRob3JfbmFtZZSMGmlucHV0X3RyYW5zYWN0aW9uX2V4ZWN1dG9ylIwKbWVzc2FnZV9pZJROaBB9lGgSTnViLg==",
+            "__type__": "agent_framework._types:Message"
+          },
+          {
+            "__pickled__": "gAWVCgYAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwJYXNzaXN0YW50lIwIY29udGVudHOUXZRoAIwHQ29udGVudJSTlCmBlH2UKIwEdHlwZZSMBHRleHSUjAthbm5vdGF0aW9uc5ROjBVhZGRpdGlvbmFsX3Byb3BlcnRpZXOUfZSMEnJhd19yZXByZXNlbnRhdGlvbpSMIW9wZW5haS50eXBlcy5jaGF0LmNoYXRfY29tcGxldGlvbpSMBkNob2ljZZSTlCmBlH2UKIwIX19kaWN0X1+UfZQojA1maW5pc2hfcmVhc29ulIwEc3RvcJSMBWluZGV4lEsAjAhsb2dwcm9ic5ROjAdtZXNzYWdllIwpb3BlbmFpLnR5cGVzLmNoYXQuY2hhdF9jb21wbGV0aW9uX21lc3NhZ2WUjBVDaGF0Q29tcGxldGlvbk1lc3NhZ2WUk5QpgZR9lChoGH2UKIwHY29udGVudJRY1AEAAExhIHRyYW5zYWNjacOzbiBULTEwMDEgcHJlc2VudGEgdW4gbW9udG8gZGUgMTgwMCBQRU4sIHJlYWxpemFkYSB2w61hIHdlYiBkZXNkZSBlbCBkaXNwb3NpdGl2byBELTAxIGVuIFBlcsO6LiBObyBzZSBvYnNlcnZhbiBzZcOxYWxlcyBpbm1lZGlhdGFzIGRlIGZyYXVkZSBjb21vIHVzbyBkZSBwYcOtcyBvIGRpc3Bvc2l0aXZvIGluY29uc2lzdGVudGUsIG5pIHJlY29ub2NpbWllbnRvIGRlIHBhdHJvbmVzIGFuw7NtYWxvcyBzZWfDum4gbG9zIGRhdG9zIHByb3BvcmNpb25hZG9zLgoKTml2ZWwgZGUgcmllc2dvOiBCYWpvIGEgTW9kZXJhZG8uIFNlIHJlY29taWVuZGEgbW9uaXRvcmVvIGVzdMOhbmRhciB5IHZhbGlkYWNpw7NuIGRlIGlkZW50aWRhZCBlbiBjYXNvIGRlIGFjdGl2aWRhZCBpbnVzdWFsIHJlbGFjaW9uYWRhIGNvbiBlbCBjbGllbnRlIENVLTAwMSBvIGVsIGRpc3Bvc2l0aXZvIEQtMDEgZW4gZWwgZnV0dXJvLpSMB3JlZnVzYWyUTmgFjAlhc3Npc3RhbnSUaA9dlIwFYXVkaW+UTowNZnVuY3Rpb25fY2FsbJROjAp0b29sX2NhbGxzlE51jBJfX3B5ZGFudGljX2V4dHJhX1+UfZSMF19fcHlkYW50aWNfZmllbGRzX3NldF9flI+UKGgFaA9oJWgnkIwUX19weWRhbnRpY19wcml2YXRlX1+UTnVidWgtfZSMFmNvbnRlbnRfZmlsdGVyX3Jlc3VsdHOUfZQojARoYXRllH2UKIwIZmlsdGVyZWSUiYwIc2V2ZXJpdHmUjARzYWZllHWMCXNlbGZfaGFybZR9lChoN4loOIwEc2FmZZR1jAZzZXh1YWyUfZQoaDeJaDiMBHNhZmWUdYwIdmlvbGVuY2WUfZQoaDeJaDiMBHNhZmWUdXVzaC+PlChoGmgcaB5oHZBoMU51YmgOaCaMDnByb3RlY3RlZF9kYXRhlE6MA3VyaZROjAptZWRpYV90eXBllE5oHk6MCmVycm9yX2NvZGWUTowNZXJyb3JfZGV0YWlsc5ROjA11c2FnZV9kZXRhaWxzlE6MB2NhbGxfaWSUTowEbmFtZZROjAlhcmd1bWVudHOUTowJZXhjZXB0aW9ulE6MBnJlc3VsdJROjAdmaWxlX2lklE6MD3ZlY3Rvcl9zdG9yZV9pZJROjAZpbnB1dHOUTowHb3V0cHV0c5ROjAhpbWFnZV9pZJROjAl0b29sX25hbWWUTowLc2VydmVyX25hbWWUTowGb3V0cHV0lE6MAmlklE5oK06MEnVzZXJfaW5wdXRfcmVxdWVzdJROjAhhcHByb3ZlZJROdWJhjAthdXRob3JfbmFtZZSME3RyYW5zYWN0aW9uX2NvbnRleHSUjAptZXNzYWdlX2lklE5oEH2UaBJOdWIu",
+            "__type__": "agent_framework._types:Message"
+          }
+        ],
+        "agent_session": {
+          "type": "session",
+          "session_id": "026b8ae4-ec25-4352-9de5-034a66e647c8",
+          "service_session_id": null,
+          "state": {
+            "in_memory": {
+              "messages": [
+                {
+                  "type": "message",
+                  "role": "user",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "Transaccion T-1001",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "additional_properties": {}
+                },
+                {
+                  "type": "message",
+                  "role": "assistant",
+                  "contents": [
+                    {
+                      "type": "function_call",
+                      "call_id": "call_0xjfu1QTLnE2yZfHEFLMWge3",
+                      "name": "search_transaction_by_id",
+                      "arguments": "{\"transaction_id\":\"T-1001\"}",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "author_name": "input_transaction_executor",
+                  "additional_properties": {}
+                },
+                {
+                  "type": "message",
+                  "role": "tool",
+                  "contents": [
+                    {
+                      "type": "function_result",
+                      "call_id": "call_0xjfu1QTLnE2yZfHEFLMWge3",
+                      "result": "{\"transaction_id\": \"T-1001\", \"customer_id\": \"CU-001\", \"amount\": 1800, \"currency\": \"PEN\", \"country\": \"PE\", \"channel\": \"web\", \"device_id\": \"D-01\", \"timestamp\": \"2025-12-17T03:15:00\", \"merchant_id\": \"M-001\", \"id\": \"b578546d-dd78-4eb1-b34c-df994570169b\"}",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "author_name": "input_transaction_executor",
+                  "additional_properties": {}
+                },
+                {
+                  "type": "message",
+                  "role": "assistant",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "{\"transaction\":\"{\\\"transaction_id\\\": \\\"T-1001\\\", \\\"customer_id\\\": \\\"CU-001\\\", \\\"amount\\\": 1800, \\\"currency\\\": \\\"PEN\\\", \\\"country\\\": \\\"PE\\\", \\\"channel\\\": \\\"web\\\", \\\"device_id\\\": \\\"D-01\\\", \\\"timestamp\\\": \\\"2025-12-17T03:15:00\\\", \\\"merchant_id\\\": \\\"M-001\\\", \\\"id\\\": \\\"b578546d-dd78-4eb1-b34c-df994570169b\\\"}\"}",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "author_name": "input_transaction_executor",
+                  "additional_properties": {}
+                },
+                {
+                  "type": "message",
+                  "role": "assistant",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "La transacción T-1001 presenta un monto de 1800 PEN, realizada vía web desde el dispositivo D-01 en Perú. No se observan señales inmediatas de fraude como uso de país o dispositivo inconsistente, ni reconocimiento de patrones anómalos según los datos proporcionados.\n\nNivel de riesgo: Bajo a Moderado. Se recomienda monitoreo estándar y validación de identidad en caso de actividad inusual relacionada con el cliente CU-001 o el dispositivo D-01 en el futuro.",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "author_name": "transaction_context",
+                  "additional_properties": {}
+                }
+              ]
+            }
+          }
+        },
+        "pending_agent_requests": {},
+        "pending_responses_to_agent": []
+      },
+      "behavioral_pattern": {
+        "cache": [],
+        "full_conversation": [
+          {
+            "__pickled__": "gAWVHwIAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwEdXNlcpSMCGNvbnRlbnRzlF2UaACMB0NvbnRlbnSUk5QpgZR9lCiMBHR5cGWUjAR0ZXh0lIwLYW5ub3RhdGlvbnOUTowVYWRkaXRpb25hbF9wcm9wZXJ0aWVzlH2UjBJyYXdfcmVwcmVzZW50YXRpb26UTmgOjBJUcmFuc2FjY2lvbiBULTEwMDGUjA5wcm90ZWN0ZWRfZGF0YZROjAN1cmmUTowKbWVkaWFfdHlwZZROjAdtZXNzYWdllE6MCmVycm9yX2NvZGWUTowNZXJyb3JfZGV0YWlsc5ROjA11c2FnZV9kZXRhaWxzlE6MB2NhbGxfaWSUTowEbmFtZZROjAlhcmd1bWVudHOUTowJZXhjZXB0aW9ulE6MBnJlc3VsdJROjAdmaWxlX2lklE6MD3ZlY3Rvcl9zdG9yZV9pZJROjAZpbnB1dHOUTowHb3V0cHV0c5ROjAhpbWFnZV9pZJROjAl0b29sX25hbWWUTowLc2VydmVyX25hbWWUTowGb3V0cHV0lE6MAmlklE6MDWZ1bmN0aW9uX2NhbGyUTowSdXNlcl9pbnB1dF9yZXF1ZXN0lE6MCGFwcHJvdmVklE51YmGMC2F1dGhvcl9uYW1llE6MCm1lc3NhZ2VfaWSUTmgQfZRoEk51Yi4=",
+            "__type__": "agent_framework._types:Message"
+          },
+          {
+            "__pickled__": "gAWVPQMAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwJYXNzaXN0YW50lIwIY29udGVudHOUXZRoAIwHQ29udGVudJSTlCmBlH2UKIwEdHlwZZSMDWZ1bmN0aW9uX2NhbGyUjAthbm5vdGF0aW9uc5ROjBVhZGRpdGlvbmFsX3Byb3BlcnRpZXOUfZSMEnJhd19yZXByZXNlbnRhdGlvbpSMPG9wZW5haS50eXBlcy5jaGF0LmNoYXRfY29tcGxldGlvbl9tZXNzYWdlX2Z1bmN0aW9uX3Rvb2xfY2FsbJSMCEZ1bmN0aW9ulJOUKYGUfZQojAhfX2RpY3RfX5R9lCiMCWFyZ3VtZW50c5SMG3sidHJhbnNhY3Rpb25faWQiOiJULTEwMDEifZSMBG5hbWWUjBhzZWFyY2hfdHJhbnNhY3Rpb25fYnlfaWSUdYwSX19weWRhbnRpY19leHRyYV9flH2UjBdfX3B5ZGFudGljX2ZpZWxkc19zZXRfX5SPlChoHGgakIwUX19weWRhbnRpY19wcml2YXRlX1+UTnVijAR0ZXh0lE6MDnByb3RlY3RlZF9kYXRhlE6MA3VyaZROjAptZWRpYV90eXBllE6MB21lc3NhZ2WUTowKZXJyb3JfY29kZZROjA1lcnJvcl9kZXRhaWxzlE6MDXVzYWdlX2RldGFpbHOUTowHY2FsbF9pZJSMHWNhbGxfMHhqZnUxUVRMbkUyeVpmSEVGTE1XZ2UzlGgcaB1oGmgbjAlleGNlcHRpb26UTowGcmVzdWx0lE6MB2ZpbGVfaWSUTowPdmVjdG9yX3N0b3JlX2lklE6MBmlucHV0c5ROjAdvdXRwdXRzlE6MCGltYWdlX2lklE6MCXRvb2xfbmFtZZROjAtzZXJ2ZXJfbmFtZZROjAZvdXRwdXSUTowCaWSUTmgOTowSdXNlcl9pbnB1dF9yZXF1ZXN0lE6MCGFwcHJvdmVklE51YmGMC2F1dGhvcl9uYW1llIwaaW5wdXRfdHJhbnNhY3Rpb25fZXhlY3V0b3KUjAptZXNzYWdlX2lklE5oEH2UaBJOdWIu",
+            "__type__": "agent_framework._types:Message"
+          },
+          {
+            "__pickled__": "gAWVUgMAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwEdG9vbJSMCGNvbnRlbnRzlF2UaACMB0NvbnRlbnSUk5QpgZR9lCiMBHR5cGWUjA9mdW5jdGlvbl9yZXN1bHSUjAthbm5vdGF0aW9uc5ROjBVhZGRpdGlvbmFsX3Byb3BlcnRpZXOUfZSMEnJhd19yZXByZXNlbnRhdGlvbpROjAR0ZXh0lE6MDnByb3RlY3RlZF9kYXRhlE6MA3VyaZROjAptZWRpYV90eXBllE6MB21lc3NhZ2WUTowKZXJyb3JfY29kZZROjA1lcnJvcl9kZXRhaWxzlE6MDXVzYWdlX2RldGFpbHOUTowHY2FsbF9pZJSMHWNhbGxfMHhqZnUxUVRMbkUyeVpmSEVGTE1XZ2UzlIwEbmFtZZROjAlhcmd1bWVudHOUTowJZXhjZXB0aW9ulE6MBnJlc3VsdJSM+nsidHJhbnNhY3Rpb25faWQiOiAiVC0xMDAxIiwgImN1c3RvbWVyX2lkIjogIkNVLTAwMSIsICJhbW91bnQiOiAxODAwLCAiY3VycmVuY3kiOiAiUEVOIiwgImNvdW50cnkiOiAiUEUiLCAiY2hhbm5lbCI6ICJ3ZWIiLCAiZGV2aWNlX2lkIjogIkQtMDEiLCAidGltZXN0YW1wIjogIjIwMjUtMTItMTdUMDM6MTU6MDAiLCAibWVyY2hhbnRfaWQiOiAiTS0wMDEiLCAiaWQiOiAiYjU3ODU0NmQtZGQ3OC00ZWIxLWIzNGMtZGY5OTQ1NzAxNjliIn2UjAdmaWxlX2lklE6MD3ZlY3Rvcl9zdG9yZV9pZJROjAZpbnB1dHOUTowHb3V0cHV0c5ROjAhpbWFnZV9pZJROjAl0b29sX25hbWWUTowLc2VydmVyX25hbWWUTowGb3V0cHV0lE6MAmlklE6MDWZ1bmN0aW9uX2NhbGyUTowSdXNlcl9pbnB1dF9yZXF1ZXN0lE6MCGFwcHJvdmVklE51YmGMC2F1dGhvcl9uYW1llIwaaW5wdXRfdHJhbnNhY3Rpb25fZXhlY3V0b3KUjAptZXNzYWdlX2lklE5oEH2UaBJOdWIu",
+            "__type__": "agent_framework._types:Message"
+          },
+          {
+            "__pickled__": "gAWVbwUAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwJYXNzaXN0YW50lIwIY29udGVudHOUXZRoAIwHQ29udGVudJSTlCmBlH2UKIwEdHlwZZSMBHRleHSUjAthbm5vdGF0aW9uc5ROjBVhZGRpdGlvbmFsX3Byb3BlcnRpZXOUfZSMEnJhd19yZXByZXNlbnRhdGlvbpSMIW9wZW5haS50eXBlcy5jaGF0LmNoYXRfY29tcGxldGlvbpSMBkNob2ljZZSTlCmBlH2UKIwIX19kaWN0X1+UfZQojA1maW5pc2hfcmVhc29ulIwEc3RvcJSMBWluZGV4lEsAjAhsb2dwcm9ic5ROjAdtZXNzYWdllIwpb3BlbmFpLnR5cGVzLmNoYXQuY2hhdF9jb21wbGV0aW9uX21lc3NhZ2WUjBVDaGF0Q29tcGxldGlvbk1lc3NhZ2WUk5QpgZR9lChoGH2UKIwHY29udGVudJRYMgEAAHsidHJhbnNhY3Rpb24iOiJ7XCJ0cmFuc2FjdGlvbl9pZFwiOiBcIlQtMTAwMVwiLCBcImN1c3RvbWVyX2lkXCI6IFwiQ1UtMDAxXCIsIFwiYW1vdW50XCI6IDE4MDAsIFwiY3VycmVuY3lcIjogXCJQRU5cIiwgXCJjb3VudHJ5XCI6IFwiUEVcIiwgXCJjaGFubmVsXCI6IFwid2ViXCIsIFwiZGV2aWNlX2lkXCI6IFwiRC0wMVwiLCBcInRpbWVzdGFtcFwiOiBcIjIwMjUtMTItMTdUMDM6MTU6MDBcIiwgXCJtZXJjaGFudF9pZFwiOiBcIk0tMDAxXCIsIFwiaWRcIjogXCJiNTc4NTQ2ZC1kZDc4LTRlYjEtYjM0Yy1kZjk5NDU3MDE2OWJcIn0ifZSMB3JlZnVzYWyUTmgFjAlhc3Npc3RhbnSUaA9dlIwFYXVkaW+UTowNZnVuY3Rpb25fY2FsbJROjAp0b29sX2NhbGxzlE51jBJfX3B5ZGFudGljX2V4dHJhX1+UfZSMF19fcHlkYW50aWNfZmllbGRzX3NldF9flI+UKGgFaA9oJWgnkIwUX19weWRhbnRpY19wcml2YXRlX1+UTnVidWgtfZSMFmNvbnRlbnRfZmlsdGVyX3Jlc3VsdHOUfZQojARoYXRllH2UKIwIZmlsdGVyZWSUiYwIc2V2ZXJpdHmUjARzYWZllHWMCXNlbGZfaGFybZR9lChoN4loOIwEc2FmZZR1jAZzZXh1YWyUfZQoaDeJaDiMBHNhZmWUdYwIdmlvbGVuY2WUfZQoaDeJaDiMBHNhZmWUdXVzaC+PlChoGmgcaB5oHZBoMU51YmgOaCaMDnByb3RlY3RlZF9kYXRhlE6MA3VyaZROjAptZWRpYV90eXBllE5oHk6MCmVycm9yX2NvZGWUTowNZXJyb3JfZGV0YWlsc5ROjA11c2FnZV9kZXRhaWxzlE6MB2NhbGxfaWSUTowEbmFtZZROjAlhcmd1bWVudHOUTowJZXhjZXB0aW9ulE6MBnJlc3VsdJROjAdmaWxlX2lklE6MD3ZlY3Rvcl9zdG9yZV9pZJROjAZpbnB1dHOUTowHb3V0cHV0c5ROjAhpbWFnZV9pZJROjAl0b29sX25hbWWUTowLc2VydmVyX25hbWWUTowGb3V0cHV0lE6MAmlklE5oK06MEnVzZXJfaW5wdXRfcmVxdWVzdJROjAhhcHByb3ZlZJROdWJhjAthdXRob3JfbmFtZZSMGmlucHV0X3RyYW5zYWN0aW9uX2V4ZWN1dG9ylIwKbWVzc2FnZV9pZJROaBB9lGgSTnViLg==",
+            "__type__": "agent_framework._types:Message"
+          },
+          {
+            "__pickled__": "gAWVMgMAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwJYXNzaXN0YW50lIwIY29udGVudHOUXZRoAIwHQ29udGVudJSTlCmBlH2UKIwEdHlwZZSMDWZ1bmN0aW9uX2NhbGyUjAthbm5vdGF0aW9uc5ROjBVhZGRpdGlvbmFsX3Byb3BlcnRpZXOUfZSMEnJhd19yZXByZXNlbnRhdGlvbpSMPG9wZW5haS50eXBlcy5jaGF0LmNoYXRfY29tcGxldGlvbl9tZXNzYWdlX2Z1bmN0aW9uX3Rvb2xfY2FsbJSMCEZ1bmN0aW9ulJOUKYGUfZQojAhfX2RpY3RfX5R9lCiMCWFyZ3VtZW50c5SMGHsiY3VzdG9tZXJfaWQiOiJDVS0wMDEifZSMBG5hbWWUjBhzZWFyY2hfY3VzdG9tZXJfYmVoYXZpb3KUdYwSX19weWRhbnRpY19leHRyYV9flH2UjBdfX3B5ZGFudGljX2ZpZWxkc19zZXRfX5SPlChoHGgakIwUX19weWRhbnRpY19wcml2YXRlX1+UTnVijAR0ZXh0lE6MDnByb3RlY3RlZF9kYXRhlE6MA3VyaZROjAptZWRpYV90eXBllE6MB21lc3NhZ2WUTowKZXJyb3JfY29kZZROjA1lcnJvcl9kZXRhaWxzlE6MDXVzYWdlX2RldGFpbHOUTowHY2FsbF9pZJSMHWNhbGxfclBYZXI1aGxhd1ZJMTJLcklRVlVQdVc2lGgcaB1oGmgbjAlleGNlcHRpb26UTowGcmVzdWx0lE6MB2ZpbGVfaWSUTowPdmVjdG9yX3N0b3JlX2lklE6MBmlucHV0c5ROjAdvdXRwdXRzlE6MCGltYWdlX2lklE6MCXRvb2xfbmFtZZROjAtzZXJ2ZXJfbmFtZZROjAZvdXRwdXSUTowCaWSUTmgOTowSdXNlcl9pbnB1dF9yZXF1ZXN0lE6MCGFwcHJvdmVklE51YmGMC2F1dGhvcl9uYW1llIwSYmVoYXZpb3JhbF9wYXR0ZXJulIwKbWVzc2FnZV9pZJROaBB9lGgSTnViLg==",
+            "__type__": "agent_framework._types:Message"
+          },
+          {
+            "__pickled__": "gAWVDgMAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwEdG9vbJSMCGNvbnRlbnRzlF2UaACMB0NvbnRlbnSUk5QpgZR9lCiMBHR5cGWUjA9mdW5jdGlvbl9yZXN1bHSUjAthbm5vdGF0aW9uc5ROjBVhZGRpdGlvbmFsX3Byb3BlcnRpZXOUfZSMEnJhd19yZXByZXNlbnRhdGlvbpROjAR0ZXh0lE6MDnByb3RlY3RlZF9kYXRhlE6MA3VyaZROjAptZWRpYV90eXBllE6MB21lc3NhZ2WUTowKZXJyb3JfY29kZZROjA1lcnJvcl9kZXRhaWxzlE6MDXVzYWdlX2RldGFpbHOUTowHY2FsbF9pZJSMHWNhbGxfclBYZXI1aGxhd1ZJMTJLcklRVlVQdVc2lIwEbmFtZZROjAlhcmd1bWVudHOUTowJZXhjZXB0aW9ulE6MBnJlc3VsdJSMvlt7ImN1c3RvbWVyX2lkIjogIkNVLTAwMSIsICJ1c3VhbF9hbW91bnRfYXZnIjogNTAwLCAidXN1YWxfaG91cnMiOiB7ImZyb20iOiA4LCAidG8iOiAyMH0sICJ1c3VhbF9jb3VudHJpZXMiOiBbIlBFIl0sICJ1c3VhbF9kZXZpY2VzIjogWyJELTAxIl0sICJpZCI6ICI5ODg1YmUyOC1kYWI1LTRkNmUtYTYxYS1iOTViYmIyNjg5ZGIifV2UjAdmaWxlX2lklE6MD3ZlY3Rvcl9zdG9yZV9pZJROjAZpbnB1dHOUTowHb3V0cHV0c5ROjAhpbWFnZV9pZJROjAl0b29sX25hbWWUTowLc2VydmVyX25hbWWUTowGb3V0cHV0lE6MAmlklE6MDWZ1bmN0aW9uX2NhbGyUTowSdXNlcl9pbnB1dF9yZXF1ZXN0lE6MCGFwcHJvdmVklE51YmGMC2F1dGhvcl9uYW1llIwSYmVoYXZpb3JhbF9wYXR0ZXJulIwKbWVzc2FnZV9pZJROaBB9lGgSTnViLg==",
+            "__type__": "agent_framework._types:Message"
+          },
+          {
+            "__pickled__": "gAWVSgYAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwJYXNzaXN0YW50lIwIY29udGVudHOUXZRoAIwHQ29udGVudJSTlCmBlH2UKIwEdHlwZZSMBHRleHSUjAthbm5vdGF0aW9uc5ROjBVhZGRpdGlvbmFsX3Byb3BlcnRpZXOUfZSMEnJhd19yZXByZXNlbnRhdGlvbpSMIW9wZW5haS50eXBlcy5jaGF0LmNoYXRfY29tcGxldGlvbpSMBkNob2ljZZSTlCmBlH2UKIwIX19kaWN0X1+UfZQojA1maW5pc2hfcmVhc29ulIwEc3RvcJSMBWluZGV4lEsAjAhsb2dwcm9ic5ROjAdtZXNzYWdllIwpb3BlbmFpLnR5cGVzLmNoYXQuY2hhdF9jb21wbGV0aW9uX21lc3NhZ2WUjBVDaGF0Q29tcGxldGlvbk1lc3NhZ2WUk5QpgZR9lChoGH2UKIwHY29udGVudJRYFQIAAExhIHRyYW5zYWNjacOzbiBULTEwMDEgcGFyYSBjbGllbnRlIENVLTAwMSBtdWVzdHJhIHVuIG1vbnRvIGRlIDE4MDAgUEVOLCBzaWduaWZpY2F0aXZhbWVudGUgc3VwZXJpb3IgYWwgcHJvbWVkaW8gaGFiaXR1YWwgZGUgNTAwIFBFTiBkZWwgY2xpZW50ZS4gU2luIGVtYmFyZ28sIGxhIHRyYW5zYWNjacOzbiBzZSByZWFsaXrDsyBlbiBlbCBwYcOtcywgY29uIGVsIGRpc3Bvc2l0aXZvIHkgZW4gZWwgY2FuYWwgdXN1YWxlcywgeSBkZW50cm8gZGVsIGhvcmFyaW8gaGFiaXR1YWwgZGUgYWN0aXZpZGFkIChlbnRyZSA4IHkgMjAgaHJzKS4gCgpKdWljaW8gZGUgcmllc2dvOiBNb2RlcmFkby4gQXVucXVlIGVsIG1vbnRvIGVsZXZhZG8gcHVlZGUgc2VyIHVuYSBzZcOxYWwgZGUgYWxlcnRhLCBlbCByZXN0byBkZSBwYXLDoW1ldHJvcyBjb25jdWVyZGFuIGNvbiBlbCBjb21wb3J0YW1pZW50byBoaXN0w7NyaWNvIGRlbCBjbGllbnRlLiBTZSByZWNvbWllbmRhIHVuYSByZXZpc2nDs24gYWRpY2lvbmFsIGRlbCBjb250ZXh0byBkZWwgZ2FzdG8ulIwHcmVmdXNhbJROaAWMCWFzc2lzdGFudJRoD12UjAVhdWRpb5ROjA1mdW5jdGlvbl9jYWxslE6MCnRvb2xfY2FsbHOUTnWMEl9fcHlkYW50aWNfZXh0cmFfX5R9lIwXX19weWRhbnRpY19maWVsZHNfc2V0X1+Uj5QoaAVoD2glaCeQjBRfX3B5ZGFudGljX3ByaXZhdGVfX5ROdWJ1aC19lIwWY29udGVudF9maWx0ZXJfcmVzdWx0c5R9lCiMBGhhdGWUfZQojAhmaWx0ZXJlZJSJjAhzZXZlcml0eZSMBHNhZmWUdYwJc2VsZl9oYXJtlH2UKGg3iWg4jARzYWZllHWMBnNleHVhbJR9lChoN4loOIwEc2FmZZR1jAh2aW9sZW5jZZR9lChoN4loOIwEc2FmZZR1dXNoL4+UKGgaaBxoHmgdkGgxTnViaA5oJowOcHJvdGVjdGVkX2RhdGGUTowDdXJplE6MCm1lZGlhX3R5cGWUTmgeTowKZXJyb3JfY29kZZROjA1lcnJvcl9kZXRhaWxzlE6MDXVzYWdlX2RldGFpbHOUTowHY2FsbF9pZJROjARuYW1llE6MCWFyZ3VtZW50c5ROjAlleGNlcHRpb26UTowGcmVzdWx0lE6MB2ZpbGVfaWSUTowPdmVjdG9yX3N0b3JlX2lklE6MBmlucHV0c5ROjAdvdXRwdXRzlE6MCGltYWdlX2lklE6MCXRvb2xfbmFtZZROjAtzZXJ2ZXJfbmFtZZROjAZvdXRwdXSUTowCaWSUTmgrTowSdXNlcl9pbnB1dF9yZXF1ZXN0lE6MCGFwcHJvdmVklE51YmGMC2F1dGhvcl9uYW1llIwSYmVoYXZpb3JhbF9wYXR0ZXJulIwKbWVzc2FnZV9pZJROaBB9lGgSTnViLg==",
+            "__type__": "agent_framework._types:Message"
+          }
+        ],
+        "agent_session": {
+          "type": "session",
+          "session_id": "3b1cec75-f207-4b1e-a237-c939ed734ac3",
+          "service_session_id": null,
+          "state": {
+            "in_memory": {
+              "messages": [
+                {
+                  "type": "message",
+                  "role": "user",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "Transaccion T-1001",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "additional_properties": {}
+                },
+                {
+                  "type": "message",
+                  "role": "assistant",
+                  "contents": [
+                    {
+                      "type": "function_call",
+                      "call_id": "call_0xjfu1QTLnE2yZfHEFLMWge3",
+                      "name": "search_transaction_by_id",
+                      "arguments": "{\"transaction_id\":\"T-1001\"}",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "author_name": "input_transaction_executor",
+                  "additional_properties": {}
+                },
+                {
+                  "type": "message",
+                  "role": "tool",
+                  "contents": [
+                    {
+                      "type": "function_result",
+                      "call_id": "call_0xjfu1QTLnE2yZfHEFLMWge3",
+                      "result": "{\"transaction_id\": \"T-1001\", \"customer_id\": \"CU-001\", \"amount\": 1800, \"currency\": \"PEN\", \"country\": \"PE\", \"channel\": \"web\", \"device_id\": \"D-01\", \"timestamp\": \"2025-12-17T03:15:00\", \"merchant_id\": \"M-001\", \"id\": \"b578546d-dd78-4eb1-b34c-df994570169b\"}",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "author_name": "input_transaction_executor",
+                  "additional_properties": {}
+                },
+                {
+                  "type": "message",
+                  "role": "assistant",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "{\"transaction\":\"{\\\"transaction_id\\\": \\\"T-1001\\\", \\\"customer_id\\\": \\\"CU-001\\\", \\\"amount\\\": 1800, \\\"currency\\\": \\\"PEN\\\", \\\"country\\\": \\\"PE\\\", \\\"channel\\\": \\\"web\\\", \\\"device_id\\\": \\\"D-01\\\", \\\"timestamp\\\": \\\"2025-12-17T03:15:00\\\", \\\"merchant_id\\\": \\\"M-001\\\", \\\"id\\\": \\\"b578546d-dd78-4eb1-b34c-df994570169b\\\"}\"}",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "author_name": "input_transaction_executor",
+                  "additional_properties": {}
+                },
+                {
+                  "type": "message",
+                  "role": "assistant",
+                  "contents": [
+                    {
+                      "type": "function_call",
+                      "call_id": "call_rPXer5hlawVI12KrIQVUPuW6",
+                      "name": "search_customer_behavior",
+                      "arguments": "{\"customer_id\":\"CU-001\"}",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "author_name": "behavioral_pattern",
+                  "additional_properties": {}
+                },
+                {
+                  "type": "message",
+                  "role": "tool",
+                  "contents": [
+                    {
+                      "type": "function_result",
+                      "call_id": "call_rPXer5hlawVI12KrIQVUPuW6",
+                      "result": "[{\"customer_id\": \"CU-001\", \"usual_amount_avg\": 500, \"usual_hours\": {\"from\": 8, \"to\": 20}, \"usual_countries\": [\"PE\"], \"usual_devices\": [\"D-01\"], \"id\": \"9885be28-dab5-4d6e-a61a-b95bbb2689db\"}]",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "author_name": "behavioral_pattern",
+                  "additional_properties": {}
+                },
+                {
+                  "type": "message",
+                  "role": "assistant",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "La transacción T-1001 para cliente CU-001 muestra un monto de 1800 PEN, significativamente superior al promedio habitual de 500 PEN del cliente. Sin embargo, la transacción se realizó en el país, con el dispositivo y en el canal usuales, y dentro del horario habitual de actividad (entre 8 y 20 hrs). \n\nJuicio de riesgo: Moderado. Aunque el monto elevado puede ser una señal de alerta, el resto de parámetros concuerdan con el comportamiento histórico del cliente. Se recomienda una revisión adicional del contexto del gasto.",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "author_name": "behavioral_pattern",
+                  "additional_properties": {}
+                }
+              ]
+            }
+          }
+        },
+        "pending_agent_requests": {},
+        "pending_responses_to_agent": []
+      },
+      "internal_policy": {
+        "cache": [],
+        "full_conversation": [
+          {
+            "__pickled__": "gAWVHwIAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwEdXNlcpSMCGNvbnRlbnRzlF2UaACMB0NvbnRlbnSUk5QpgZR9lCiMBHR5cGWUjAR0ZXh0lIwLYW5ub3RhdGlvbnOUTowVYWRkaXRpb25hbF9wcm9wZXJ0aWVzlH2UjBJyYXdfcmVwcmVzZW50YXRpb26UTmgOjBJUcmFuc2FjY2lvbiBULTEwMDGUjA5wcm90ZWN0ZWRfZGF0YZROjAN1cmmUTowKbWVkaWFfdHlwZZROjAdtZXNzYWdllE6MCmVycm9yX2NvZGWUTowNZXJyb3JfZGV0YWlsc5ROjA11c2FnZV9kZXRhaWxzlE6MB2NhbGxfaWSUTowEbmFtZZROjAlhcmd1bWVudHOUTowJZXhjZXB0aW9ulE6MBnJlc3VsdJROjAdmaWxlX2lklE6MD3ZlY3Rvcl9zdG9yZV9pZJROjAZpbnB1dHOUTowHb3V0cHV0c5ROjAhpbWFnZV9pZJROjAl0b29sX25hbWWUTowLc2VydmVyX25hbWWUTowGb3V0cHV0lE6MAmlklE6MDWZ1bmN0aW9uX2NhbGyUTowSdXNlcl9pbnB1dF9yZXF1ZXN0lE6MCGFwcHJvdmVklE51YmGMC2F1dGhvcl9uYW1llE6MCm1lc3NhZ2VfaWSUTmgQfZRoEk51Yi4=",
+            "__type__": "agent_framework._types:Message"
+          },
+          {
+            "__pickled__": "gAWVPQMAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwJYXNzaXN0YW50lIwIY29udGVudHOUXZRoAIwHQ29udGVudJSTlCmBlH2UKIwEdHlwZZSMDWZ1bmN0aW9uX2NhbGyUjAthbm5vdGF0aW9uc5ROjBVhZGRpdGlvbmFsX3Byb3BlcnRpZXOUfZSMEnJhd19yZXByZXNlbnRhdGlvbpSMPG9wZW5haS50eXBlcy5jaGF0LmNoYXRfY29tcGxldGlvbl9tZXNzYWdlX2Z1bmN0aW9uX3Rvb2xfY2FsbJSMCEZ1bmN0aW9ulJOUKYGUfZQojAhfX2RpY3RfX5R9lCiMCWFyZ3VtZW50c5SMG3sidHJhbnNhY3Rpb25faWQiOiJULTEwMDEifZSMBG5hbWWUjBhzZWFyY2hfdHJhbnNhY3Rpb25fYnlfaWSUdYwSX19weWRhbnRpY19leHRyYV9flH2UjBdfX3B5ZGFudGljX2ZpZWxkc19zZXRfX5SPlChoHGgakIwUX19weWRhbnRpY19wcml2YXRlX1+UTnVijAR0ZXh0lE6MDnByb3RlY3RlZF9kYXRhlE6MA3VyaZROjAptZWRpYV90eXBllE6MB21lc3NhZ2WUTowKZXJyb3JfY29kZZROjA1lcnJvcl9kZXRhaWxzlE6MDXVzYWdlX2RldGFpbHOUTowHY2FsbF9pZJSMHWNhbGxfMHhqZnUxUVRMbkUyeVpmSEVGTE1XZ2UzlGgcaB1oGmgbjAlleGNlcHRpb26UTowGcmVzdWx0lE6MB2ZpbGVfaWSUTowPdmVjdG9yX3N0b3JlX2lklE6MBmlucHV0c5ROjAdvdXRwdXRzlE6MCGltYWdlX2lklE6MCXRvb2xfbmFtZZROjAtzZXJ2ZXJfbmFtZZROjAZvdXRwdXSUTowCaWSUTmgOTowSdXNlcl9pbnB1dF9yZXF1ZXN0lE6MCGFwcHJvdmVklE51YmGMC2F1dGhvcl9uYW1llIwaaW5wdXRfdHJhbnNhY3Rpb25fZXhlY3V0b3KUjAptZXNzYWdlX2lklE5oEH2UaBJOdWIu",
+            "__type__": "agent_framework._types:Message"
+          },
+          {
+            "__pickled__": "gAWVUgMAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwEdG9vbJSMCGNvbnRlbnRzlF2UaACMB0NvbnRlbnSUk5QpgZR9lCiMBHR5cGWUjA9mdW5jdGlvbl9yZXN1bHSUjAthbm5vdGF0aW9uc5ROjBVhZGRpdGlvbmFsX3Byb3BlcnRpZXOUfZSMEnJhd19yZXByZXNlbnRhdGlvbpROjAR0ZXh0lE6MDnByb3RlY3RlZF9kYXRhlE6MA3VyaZROjAptZWRpYV90eXBllE6MB21lc3NhZ2WUTowKZXJyb3JfY29kZZROjA1lcnJvcl9kZXRhaWxzlE6MDXVzYWdlX2RldGFpbHOUTowHY2FsbF9pZJSMHWNhbGxfMHhqZnUxUVRMbkUyeVpmSEVGTE1XZ2UzlIwEbmFtZZROjAlhcmd1bWVudHOUTowJZXhjZXB0aW9ulE6MBnJlc3VsdJSM+nsidHJhbnNhY3Rpb25faWQiOiAiVC0xMDAxIiwgImN1c3RvbWVyX2lkIjogIkNVLTAwMSIsICJhbW91bnQiOiAxODAwLCAiY3VycmVuY3kiOiAiUEVOIiwgImNvdW50cnkiOiAiUEUiLCAiY2hhbm5lbCI6ICJ3ZWIiLCAiZGV2aWNlX2lkIjogIkQtMDEiLCAidGltZXN0YW1wIjogIjIwMjUtMTItMTdUMDM6MTU6MDAiLCAibWVyY2hhbnRfaWQiOiAiTS0wMDEiLCAiaWQiOiAiYjU3ODU0NmQtZGQ3OC00ZWIxLWIzNGMtZGY5OTQ1NzAxNjliIn2UjAdmaWxlX2lklE6MD3ZlY3Rvcl9zdG9yZV9pZJROjAZpbnB1dHOUTowHb3V0cHV0c5ROjAhpbWFnZV9pZJROjAl0b29sX25hbWWUTowLc2VydmVyX25hbWWUTowGb3V0cHV0lE6MAmlklE6MDWZ1bmN0aW9uX2NhbGyUTowSdXNlcl9pbnB1dF9yZXF1ZXN0lE6MCGFwcHJvdmVklE51YmGMC2F1dGhvcl9uYW1llIwaaW5wdXRfdHJhbnNhY3Rpb25fZXhlY3V0b3KUjAptZXNzYWdlX2lklE5oEH2UaBJOdWIu",
+            "__type__": "agent_framework._types:Message"
+          },
+          {
+            "__pickled__": "gAWVbwUAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwJYXNzaXN0YW50lIwIY29udGVudHOUXZRoAIwHQ29udGVudJSTlCmBlH2UKIwEdHlwZZSMBHRleHSUjAthbm5vdGF0aW9uc5ROjBVhZGRpdGlvbmFsX3Byb3BlcnRpZXOUfZSMEnJhd19yZXByZXNlbnRhdGlvbpSMIW9wZW5haS50eXBlcy5jaGF0LmNoYXRfY29tcGxldGlvbpSMBkNob2ljZZSTlCmBlH2UKIwIX19kaWN0X1+UfZQojA1maW5pc2hfcmVhc29ulIwEc3RvcJSMBWluZGV4lEsAjAhsb2dwcm9ic5ROjAdtZXNzYWdllIwpb3BlbmFpLnR5cGVzLmNoYXQuY2hhdF9jb21wbGV0aW9uX21lc3NhZ2WUjBVDaGF0Q29tcGxldGlvbk1lc3NhZ2WUk5QpgZR9lChoGH2UKIwHY29udGVudJRYMgEAAHsidHJhbnNhY3Rpb24iOiJ7XCJ0cmFuc2FjdGlvbl9pZFwiOiBcIlQtMTAwMVwiLCBcImN1c3RvbWVyX2lkXCI6IFwiQ1UtMDAxXCIsIFwiYW1vdW50XCI6IDE4MDAsIFwiY3VycmVuY3lcIjogXCJQRU5cIiwgXCJjb3VudHJ5XCI6IFwiUEVcIiwgXCJjaGFubmVsXCI6IFwid2ViXCIsIFwiZGV2aWNlX2lkXCI6IFwiRC0wMVwiLCBcInRpbWVzdGFtcFwiOiBcIjIwMjUtMTItMTdUMDM6MTU6MDBcIiwgXCJtZXJjaGFudF9pZFwiOiBcIk0tMDAxXCIsIFwiaWRcIjogXCJiNTc4NTQ2ZC1kZDc4LTRlYjEtYjM0Yy1kZjk5NDU3MDE2OWJcIn0ifZSMB3JlZnVzYWyUTmgFjAlhc3Npc3RhbnSUaA9dlIwFYXVkaW+UTowNZnVuY3Rpb25fY2FsbJROjAp0b29sX2NhbGxzlE51jBJfX3B5ZGFudGljX2V4dHJhX1+UfZSMF19fcHlkYW50aWNfZmllbGRzX3NldF9flI+UKGgFaA9oJWgnkIwUX19weWRhbnRpY19wcml2YXRlX1+UTnVidWgtfZSMFmNvbnRlbnRfZmlsdGVyX3Jlc3VsdHOUfZQojARoYXRllH2UKIwIZmlsdGVyZWSUiYwIc2V2ZXJpdHmUjARzYWZllHWMCXNlbGZfaGFybZR9lChoN4loOIwEc2FmZZR1jAZzZXh1YWyUfZQoaDeJaDiMBHNhZmWUdYwIdmlvbGVuY2WUfZQoaDeJaDiMBHNhZmWUdXVzaC+PlChoGmgcaB5oHZBoMU51YmgOaCaMDnByb3RlY3RlZF9kYXRhlE6MA3VyaZROjAptZWRpYV90eXBllE5oHk6MCmVycm9yX2NvZGWUTowNZXJyb3JfZGV0YWlsc5ROjA11c2FnZV9kZXRhaWxzlE6MB2NhbGxfaWSUTowEbmFtZZROjAlhcmd1bWVudHOUTowJZXhjZXB0aW9ulE6MBnJlc3VsdJROjAdmaWxlX2lklE6MD3ZlY3Rvcl9zdG9yZV9pZJROjAZpbnB1dHOUTowHb3V0cHV0c5ROjAhpbWFnZV9pZJROjAl0b29sX25hbWWUTowLc2VydmVyX25hbWWUTowGb3V0cHV0lE6MAmlklE5oK06MEnVzZXJfaW5wdXRfcmVxdWVzdJROjAhhcHByb3ZlZJROdWJhjAthdXRob3JfbmFtZZSMGmlucHV0X3RyYW5zYWN0aW9uX2V4ZWN1dG9ylIwKbWVzc2FnZV9pZJROaBB9lGgSTnViLg==",
+            "__type__": "agent_framework._types:Message"
+          },
+          {
+            "__pickled__": "gAWVOAUAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwJYXNzaXN0YW50lIwIY29udGVudHOUXZQoaACMB0NvbnRlbnSUk5QpgZR9lCiMBHR5cGWUjA1mdW5jdGlvbl9jYWxslIwLYW5ub3RhdGlvbnOUTowVYWRkaXRpb25hbF9wcm9wZXJ0aWVzlH2UjBJyYXdfcmVwcmVzZW50YXRpb26UjDxvcGVuYWkudHlwZXMuY2hhdC5jaGF0X2NvbXBsZXRpb25fbWVzc2FnZV9mdW5jdGlvbl90b29sX2NhbGyUjAhGdW5jdGlvbpSTlCmBlH2UKIwIX19kaWN0X1+UfZQojAlhcmd1bWVudHOUWDgBAAB7InRyYW5zYWN0aW9uX3RleHQiOiAie1widHJhbnNhY3Rpb25faWRcIjogXCJULTEwMDFcIiwgXCJjdXN0b21lcl9pZFwiOiBcIkNVLTAwMVwiLCBcImFtb3VudFwiOiAxODAwLCBcImN1cnJlbmN5XCI6IFwiUEVOXCIsIFwiY291bnRyeVwiOiBcIlBFXCIsIFwiY2hhbm5lbFwiOiBcIndlYlwiLCBcImRldmljZV9pZFwiOiBcIkQtMDFcIiwgXCJ0aW1lc3RhbXBcIjogXCIyMDI1LTEyLTE3VDAzOjE1OjAwXCIsIFwibWVyY2hhbnRfaWRcIjogXCJNLTAwMVwiLCBcImlkXCI6IFwiYjU3ODU0NmQtZGQ3OC00ZWIxLWIzNGMtZGY5OTQ1NzAxNjliXCJ9In2UjARuYW1llIwec2VhcmNoX2ludGVybmFsX2ZyYXVkX3BvbGljaWVzlHWMEl9fcHlkYW50aWNfZXh0cmFfX5R9lIwXX19weWRhbnRpY19maWVsZHNfc2V0X1+Uj5QoaBxoGpCMFF9fcHlkYW50aWNfcHJpdmF0ZV9flE51YowEdGV4dJROjA5wcm90ZWN0ZWRfZGF0YZROjAN1cmmUTowKbWVkaWFfdHlwZZROjAdtZXNzYWdllE6MCmVycm9yX2NvZGWUTowNZXJyb3JfZGV0YWlsc5ROjA11c2FnZV9kZXRhaWxzlE6MB2NhbGxfaWSUjB1jYWxsX21GMzl4NDlNOWFIZFpWOXFweGxNRDRLdJRoHGgdaBpoG4wJZXhjZXB0aW9ulE6MBnJlc3VsdJROjAdmaWxlX2lklE6MD3ZlY3Rvcl9zdG9yZV9pZJROjAZpbnB1dHOUTowHb3V0cHV0c5ROjAhpbWFnZV9pZJROjAl0b29sX25hbWWUTowLc2VydmVyX25hbWWUTowGb3V0cHV0lE6MAmlklE5oDk6MEnVzZXJfaW5wdXRfcmVxdWVzdJROjAhhcHByb3ZlZJROdWJoCimBlH2UKGgNaA5oD05oEH2UaBJoFSmBlH2UKGgYfZQoaBqMGXsiY3VzdG9tZXJfaWQiOiAiQ1UtMDAxIn2UaByMGHNlYXJjaF9jdXN0b21lcl9iZWhhdmlvcpR1aB59lGggj5QoaBxoGpBoIk51YmgjTmgkTmglTmgmTmgnTmgoTmgpTmgqTmgrjB1jYWxsX0VNWGFaQXRBNml5c210UjFPUjA4WmtBNZRoHGhBaBpoQGgtTmguTmgvTmgwTmgxTmgyTmgzTmg0Tmg1Tmg2Tmg3TmgOTmg4Tmg5TnViZYwLYXV0aG9yX25hbWWUjA9pbnRlcm5hbF9wb2xpY3mUjAptZXNzYWdlX2lklE5oEH2UaBJOdWIu",
+            "__type__": "agent_framework._types:Message"
+          },
+          {
+            "__pickled__": "gAWVrgQAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwEdG9vbJSMCGNvbnRlbnRzlF2UKGgAjAdDb250ZW50lJOUKYGUfZQojAR0eXBllIwPZnVuY3Rpb25fcmVzdWx0lIwLYW5ub3RhdGlvbnOUTowVYWRkaXRpb25hbF9wcm9wZXJ0aWVzlH2UjBJyYXdfcmVwcmVzZW50YXRpb26UTowEdGV4dJROjA5wcm90ZWN0ZWRfZGF0YZROjAN1cmmUTowKbWVkaWFfdHlwZZROjAdtZXNzYWdllE6MCmVycm9yX2NvZGWUTowNZXJyb3JfZGV0YWlsc5ROjA11c2FnZV9kZXRhaWxzlE6MB2NhbGxfaWSUjB1jYWxsX21GMzl4NDlNOWFIZFpWOXFweGxNRDRLdJSMBG5hbWWUTowJYXJndW1lbnRzlE6MCWV4Y2VwdGlvbpROjAZyZXN1bHSUWBsBAABbeyJjaHVua19pZCI6ICIyIiwgInJ1bGUiOiAiVHJhbnNhY2Npw7NuIGludGVybmFjaW9uYWwgeSBkaXNwb3NpdGl2byBudWV2byDihpIgRVNDQUxBVEVfVE9fSFVNQU4iLCAidmVyc2lvbiI6ICIyMDI1LjEiLCAicG9saWN5X2lkIjogIkZQLTAyIn0sIHsiY2h1bmtfaWQiOiAiMSIsICJydWxlIjogIk1vbnRvID4gM3ggcHJvbWVkaW8gaGFiaXR1YWwgeSBob3JhcmlvIGZ1ZXJhIGRlIHJhbmdvIOKGkiBDSEFMTEVOR0UiLCAidmVyc2lvbiI6ICIyMDI1LjEiLCAicG9saWN5X2lkIjogIkZQLTAxIn1dlIwHZmlsZV9pZJROjA92ZWN0b3Jfc3RvcmVfaWSUTowGaW5wdXRzlE6MB291dHB1dHOUTowIaW1hZ2VfaWSUTowJdG9vbF9uYW1llE6MC3NlcnZlcl9uYW1llE6MBm91dHB1dJROjAJpZJROjA1mdW5jdGlvbl9jYWxslE6MEnVzZXJfaW5wdXRfcmVxdWVzdJROjAhhcHByb3ZlZJROdWJoCimBlH2UKGgNaA5oD05oEH2UaBJOaBNOaBROaBVOaBZOaBdOaBhOaBlOaBpOaBuMHWNhbGxfRU1YYVpBdEE2aXlzbXRSMU9SMDhaa0E1lGgdTmgeTmgfTmggjL5beyJjdXN0b21lcl9pZCI6ICJDVS0wMDEiLCAidXN1YWxfYW1vdW50X2F2ZyI6IDUwMCwgInVzdWFsX2hvdXJzIjogeyJmcm9tIjogOCwgInRvIjogMjB9LCAidXN1YWxfY291bnRyaWVzIjogWyJQRSJdLCAidXN1YWxfZGV2aWNlcyI6IFsiRC0wMSJdLCAiaWQiOiAiOTg4NWJlMjgtZGFiNS00ZDZlLWE2MWEtYjk1YmJiMjY4OWRiIn1dlGgiTmgjTmgkTmglTmgmTmgnTmgoTmgpTmgqTmgrTmgsTmgtTnViZYwLYXV0aG9yX25hbWWUjA9pbnRlcm5hbF9wb2xpY3mUjAptZXNzYWdlX2lklE5oEH2UaBJOdWIu",
+            "__type__": "agent_framework._types:Message"
+          },
+          {
+            "__pickled__": "gAWVZggAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwJYXNzaXN0YW50lIwIY29udGVudHOUXZRoAIwHQ29udGVudJSTlCmBlH2UKIwEdHlwZZSMBHRleHSUjAthbm5vdGF0aW9uc5ROjBVhZGRpdGlvbmFsX3Byb3BlcnRpZXOUfZSMEnJhd19yZXByZXNlbnRhdGlvbpSMIW9wZW5haS50eXBlcy5jaGF0LmNoYXRfY29tcGxldGlvbpSMBkNob2ljZZSTlCmBlH2UKIwIX19kaWN0X1+UfZQojA1maW5pc2hfcmVhc29ulIwEc3RvcJSMBWluZGV4lEsAjAhsb2dwcm9ic5ROjAdtZXNzYWdllIwpb3BlbmFpLnR5cGVzLmNoYXQuY2hhdF9jb21wbGV0aW9uX21lc3NhZ2WUjBVDaGF0Q29tcGxldGlvbk1lc3NhZ2WUk5QpgZR9lChoGH2UKIwHY29udGVudJRYNAQAAExhIHRyYW5zYWNjacOzbiBULTEwMDEgcHJlc2VudGEgbGFzIHNpZ3VpZW50ZXMgY2FyYWN0ZXLDrXN0aWNhcyB5IGNvbnRleHRvOgoKLSBNb250bzogMTgwMCBQRU4sIHF1ZSBlcyBtw6FzIGRlIDMgdmVjZXMgZWwgcHJvbWVkaW8gaGFiaXR1YWwgZGVsIGNsaWVudGUgKDUwMCBQRU4pLgotIEhvcmFyaW86IDAzOjE1IEFNLCBxdWUgZXN0w6EgZnVlcmEgZGVsIHJhbmdvIGhhYml0dWFsIGRlIHRyYW5zYWNjaW9uZXMgZGVsIGNsaWVudGUgKDA4OjAwIGEgMjA6MDApLgotIFBhw61zOiBQRSAoUGVyw7opLCBxdWUgZXMgcGFydGUgZGUgbG9zIHBhw61zZXMgaGFiaXR1YWxlcyBkZWwgY2xpZW50ZS4KLSBEaXNwb3NpdGl2bzogRC0wMSwgcXVlIGNvaW5jaWRlIGNvbiBlbCBkaXNwb3NpdGl2byBoYWJpdHVhbCBkZWwgY2xpZW50ZS4KClBvbMOtdGljYXMgaW50ZXJuYXMgcmVsZXZhbnRlcyBjb25zdWx0YWRhczoKCjEuIEZQLTAxLCBjaHVua19pZCAxLCB2ZXJzaW9uIDIwMjUuMTogIk1vbnRvID4gM3ggcHJvbWVkaW8gaGFiaXR1YWwgeSBob3JhcmlvIGZ1ZXJhIGRlIHJhbmdvIOKGkiBDSEFMTEVOR0UiCjIuIEZQLTAyLCBjaHVua19pZCAyLCB2ZXJzaW9uIDIwMjUuMTogIlRyYW5zYWNjacOzbiBpbnRlcm5hY2lvbmFsIHkgZGlzcG9zaXRpdm8gbnVldm8g4oaSIEVTQ0FMQVRFX1RPX0hVTUFOIiAobm8gYXBsaWNhIHBvcnF1ZSBlbCBwYcOtcyBlcyBoYWJpdHVhbCB5IGVsIGRpc3Bvc2l0aXZvIHRhbWJpw6luKS4KCkV2YWx1YWNpw7NuOgoKTGEgdHJhbnNhY2Npw7NuIHJvbXBlIGxhIHBvbMOtdGljYSBGUC0wMSBwb3JxdWUgZWwgbW9udG8gZXMgc2lnbmlmaWNhdGl2YW1lbnRlIG1heW9yIGFsIHByb21lZGlvIGhhYml0dWFsIHkgb2N1cnJlIGVuIGhvcmFyaW8gZnVlcmEgZGUgcmFuZ28sIHBvciBsbyBxdWUgZGViZSBnZW5lcmFyc2UgdW4gQ0hBTExFTkdFIChkZXNhZsOtbykgcGFyYSB2ZXJpZmljYXIgbGEgYXV0ZW50aWNpZGFkLgoKQ29uY2x1c2nDs246IEFwbGljYSBjw7NkaWdvIENIQUxMRU5HRSBjb25mb3JtZSBhIGxhIHBvbGljeSBGUC0wMSwgY2h1bmtfaWQgMSwgdmVyc2lvbiAyMDI1LjEulIwHcmVmdXNhbJROaAWMCWFzc2lzdGFudJRoD12UjAVhdWRpb5ROjA1mdW5jdGlvbl9jYWxslE6MCnRvb2xfY2FsbHOUTnWMEl9fcHlkYW50aWNfZXh0cmFfX5R9lIwXX19weWRhbnRpY19maWVsZHNfc2V0X1+Uj5QoaAVoD2glaCeQjBRfX3B5ZGFudGljX3ByaXZhdGVfX5ROdWJ1aC19lIwWY29udGVudF9maWx0ZXJfcmVzdWx0c5R9lCiMBGhhdGWUfZQojAhmaWx0ZXJlZJSJjAhzZXZlcml0eZSMBHNhZmWUdYwJc2VsZl9oYXJtlH2UKGg3iWg4jARzYWZllHWMBnNleHVhbJR9lChoN4loOIwEc2FmZZR1jAh2aW9sZW5jZZR9lChoN4loOIwEc2FmZZR1dXNoL4+UKGgaaBxoHmgdkGgxTnViaA5oJowOcHJvdGVjdGVkX2RhdGGUTowDdXJplE6MCm1lZGlhX3R5cGWUTmgeTowKZXJyb3JfY29kZZROjA1lcnJvcl9kZXRhaWxzlE6MDXVzYWdlX2RldGFpbHOUTowHY2FsbF9pZJROjARuYW1llE6MCWFyZ3VtZW50c5ROjAlleGNlcHRpb26UTowGcmVzdWx0lE6MB2ZpbGVfaWSUTowPdmVjdG9yX3N0b3JlX2lklE6MBmlucHV0c5ROjAdvdXRwdXRzlE6MCGltYWdlX2lklE6MCXRvb2xfbmFtZZROjAtzZXJ2ZXJfbmFtZZROjAZvdXRwdXSUTowCaWSUTmgrTowSdXNlcl9pbnB1dF9yZXF1ZXN0lE6MCGFwcHJvdmVklE51YmGMC2F1dGhvcl9uYW1llIwPaW50ZXJuYWxfcG9saWN5lIwKbWVzc2FnZV9pZJROaBB9lGgSTnViLg==",
+            "__type__": "agent_framework._types:Message"
+          }
+        ],
+        "agent_session": {
+          "type": "session",
+          "session_id": "1deb1682-cfa1-4a22-b972-09828174a36c",
+          "service_session_id": null,
+          "state": {
+            "in_memory": {
+              "messages": [
+                {
+                  "type": "message",
+                  "role": "user",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "Transaccion T-1001",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "additional_properties": {}
+                },
+                {
+                  "type": "message",
+                  "role": "assistant",
+                  "contents": [
+                    {
+                      "type": "function_call",
+                      "call_id": "call_0xjfu1QTLnE2yZfHEFLMWge3",
+                      "name": "search_transaction_by_id",
+                      "arguments": "{\"transaction_id\":\"T-1001\"}",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "author_name": "input_transaction_executor",
+                  "additional_properties": {}
+                },
+                {
+                  "type": "message",
+                  "role": "tool",
+                  "contents": [
+                    {
+                      "type": "function_result",
+                      "call_id": "call_0xjfu1QTLnE2yZfHEFLMWge3",
+                      "result": "{\"transaction_id\": \"T-1001\", \"customer_id\": \"CU-001\", \"amount\": 1800, \"currency\": \"PEN\", \"country\": \"PE\", \"channel\": \"web\", \"device_id\": \"D-01\", \"timestamp\": \"2025-12-17T03:15:00\", \"merchant_id\": \"M-001\", \"id\": \"b578546d-dd78-4eb1-b34c-df994570169b\"}",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "author_name": "input_transaction_executor",
+                  "additional_properties": {}
+                },
+                {
+                  "type": "message",
+                  "role": "assistant",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "{\"transaction\":\"{\\\"transaction_id\\\": \\\"T-1001\\\", \\\"customer_id\\\": \\\"CU-001\\\", \\\"amount\\\": 1800, \\\"currency\\\": \\\"PEN\\\", \\\"country\\\": \\\"PE\\\", \\\"channel\\\": \\\"web\\\", \\\"device_id\\\": \\\"D-01\\\", \\\"timestamp\\\": \\\"2025-12-17T03:15:00\\\", \\\"merchant_id\\\": \\\"M-001\\\", \\\"id\\\": \\\"b578546d-dd78-4eb1-b34c-df994570169b\\\"}\"}",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "author_name": "input_transaction_executor",
+                  "additional_properties": {}
+                },
+                {
+                  "type": "message",
+                  "role": "assistant",
+                  "contents": [
+                    {
+                      "type": "function_call",
+                      "call_id": "call_mF39x49M9aHdZV9qpxlMD4Kt",
+                      "name": "search_internal_fraud_policies",
+                      "arguments": "{\"transaction_text\": \"{\\\"transaction_id\\\": \\\"T-1001\\\", \\\"customer_id\\\": \\\"CU-001\\\", \\\"amount\\\": 1800, \\\"currency\\\": \\\"PEN\\\", \\\"country\\\": \\\"PE\\\", \\\"channel\\\": \\\"web\\\", \\\"device_id\\\": \\\"D-01\\\", \\\"timestamp\\\": \\\"2025-12-17T03:15:00\\\", \\\"merchant_id\\\": \\\"M-001\\\", \\\"id\\\": \\\"b578546d-dd78-4eb1-b34c-df994570169b\\\"}\"}",
+                      "additional_properties": {}
+                    },
+                    {
+                      "type": "function_call",
+                      "call_id": "call_EMXaZAtA6iysmtR1OR08ZkA5",
+                      "name": "search_customer_behavior",
+                      "arguments": "{\"customer_id\": \"CU-001\"}",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "author_name": "internal_policy",
+                  "additional_properties": {}
+                },
+                {
+                  "type": "message",
+                  "role": "tool",
+                  "contents": [
+                    {
+                      "type": "function_result",
+                      "call_id": "call_mF39x49M9aHdZV9qpxlMD4Kt",
+                      "result": "[{\"chunk_id\": \"2\", \"rule\": \"Transacción internacional y dispositivo nuevo → ESCALATE_TO_HUMAN\", \"version\": \"2025.1\", \"policy_id\": \"FP-02\"}, {\"chunk_id\": \"1\", \"rule\": \"Monto > 3x promedio habitual y horario fuera de rango → CHALLENGE\", \"version\": \"2025.1\", \"policy_id\": \"FP-01\"}]",
+                      "additional_properties": {}
+                    },
+                    {
+                      "type": "function_result",
+                      "call_id": "call_EMXaZAtA6iysmtR1OR08ZkA5",
+                      "result": "[{\"customer_id\": \"CU-001\", \"usual_amount_avg\": 500, \"usual_hours\": {\"from\": 8, \"to\": 20}, \"usual_countries\": [\"PE\"], \"usual_devices\": [\"D-01\"], \"id\": \"9885be28-dab5-4d6e-a61a-b95bbb2689db\"}]",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "author_name": "internal_policy",
+                  "additional_properties": {}
+                },
+                {
+                  "type": "message",
+                  "role": "assistant",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "La transacción T-1001 presenta las siguientes características y contexto:\n\n- Monto: 1800 PEN, que es más de 3 veces el promedio habitual del cliente (500 PEN).\n- Horario: 03:15 AM, que está fuera del rango habitual de transacciones del cliente (08:00 a 20:00).\n- País: PE (Perú), que es parte de los países habituales del cliente.\n- Dispositivo: D-01, que coincide con el dispositivo habitual del cliente.\n\nPolíticas internas relevantes consultadas:\n\n1. FP-01, chunk_id 1, version 2025.1: \"Monto > 3x promedio habitual y horario fuera de rango → CHALLENGE\"\n2. FP-02, chunk_id 2, version 2025.1: \"Transacción internacional y dispositivo nuevo → ESCALATE_TO_HUMAN\" (no aplica porque el país es habitual y el dispositivo también).\n\nEvaluación:\n\nLa transacción rompe la política FP-01 porque el monto es significativamente mayor al promedio habitual y ocurre en horario fuera de rango, por lo que debe generarse un CHALLENGE (desafío) para verificar la autenticidad.\n\nConclusión: Aplica código CHALLENGE conforme a la policy FP-01, chunk_id 1, version 2025.1.",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "author_name": "internal_policy",
+                  "additional_properties": {}
+                }
+              ]
+            }
+          }
+        },
+        "pending_agent_requests": {},
+        "pending_responses_to_agent": []
+      },
+      "evidence_aggregation": {},
+      "debate": {
+        "cache": [],
+        "full_conversation": [
+          {
+            "__pickled__": "gAWVFAkAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwEdXNlcpSMCGNvbnRlbnRzlF2UaACMB0NvbnRlbnSUk5QpgZR9lCiMBHR5cGWUjAR0ZXh0lIwLYW5ub3RhdGlvbnOUTowVYWRkaXRpb25hbF9wcm9wZXJ0aWVzlH2UjBJyYXdfcmVwcmVzZW50YXRpb26UTmgOWAQHAABBZ2VudGU6IHRyYW5zYWN0aW9uX2NvbnRleHQgIApSZXN1bWVuOiBMYSB0cmFuc2FjY2nDs24gVC0xMDAxIHBvciB1biBtb250byBkZSAxODAwIFBFTiBzZSByZWFsaXrDsyB2w61hIHdlYiBkZXNkZSBlbCBkaXNwb3NpdGl2byBELTAxIGVuIFBlcsO6LiBObyBzZSBkZXRlY3Rhcm9uIHNlw7FhbGVzIGlubWVkaWF0YXMgZGUgZnJhdWRlIHJlbGFjaW9uYWRhcyBjb24gcGHDrXMgbyBkaXNwb3NpdGl2bywgbmkgcGF0cm9uZXMgYW7Ds21hbG9zIGFwYXJlbnRlcy4gRWwgbml2ZWwgZGUgcmllc2dvIGFzaWduYWRvIGVzIGJham8gYSBtb2RlcmFkbywgY29uIHJlY29tZW5kYWNpw7NuIGRlIG1vbml0b3JlbyBlc3TDoW5kYXIgeSB2YWxpZGFjacOzbiBkZSBpZGVudGlkYWQgZW4gY2FzbyBkZSBhY3RpdmlkYWQgaW51c3VhbCBmdXR1cmEgZGVsIGNsaWVudGUgQ1UtMDAxIG8gZGlzcG9zaXRpdm8gRC0wMS4gIApDb25jbHVzacOzbjogUmllc2dvIGJham8gYSBtb2RlcmFkbywgc2luIGluZGljaW9zIGNsYXJvcyBkZSBmcmF1ZGU7IHNlIHN1Z2llcmUgc2VndWltaWVudG8gdXN1YWwuCgpBZ2VudGU6IGJlaGF2aW9yYWxfcGF0dGVybiAgClJlc3VtZW46IExhIHRyYW5zYWNjacOzbiBULTEwMDEgZGUgMTgwMCBQRU4gZXMgbcOhcyBkZSB0cmVzIHZlY2VzIGVsIG1vbnRvIHByb21lZGlvIGhhYml0dWFsICg1MDAgUEVOKSBkZWwgY2xpZW50ZSBDVS0wMDEuIE5vIG9ic3RhbnRlLCBsYSBvcGVyYWNpw7NuIHNlIGVmZWN0dcOzIGVuIGVsIHBhw61zLCBjb24gZGlzcG9zaXRpdm8geSBjYW5hbCBoYWJpdHVhbGVzLCB5IGRlbnRybyBkZWwgaG9yYXJpbyB1c3VhbCAoODowMCBhIDIwOjAwKS4gRWwgaW5jcmVtZW50byBlbiBlbCBtb250byBnZW5lcmEgdW5hIHNlw7FhbCBkZSBhbGVydGEsIHBlcm8gbGEgY29pbmNpZGVuY2lhIGNvbiBlbCBwYXRyw7NuIGhpc3TDs3JpY28gYXRlbsO6YSBlbCBuaXZlbCBkZSByaWVzZ28uIFNlIHJlY29taWVuZGEgcmV2aXNpw7NuIGFkaWNpb25hbCBkZWwgY29udGV4dG8gZGVsIGdhc3RvLiAgCkNvbmNsdXNpw7NuOiBSaWVzZ28gbW9kZXJhZG8gcG9yIG1vbnRvIGVsZXZhZG8gcGVybyBjb21wb3J0YW1pZW50byBjb25zaXN0ZW50ZTsgc3VnZXJlbmNpYSBkZSBhbsOhbGlzaXMgY29udGV4dHVhbCBhZGljaW9uYWwuCgpBZ2VudGU6IGludGVybmFsX3BvbGljeSAgClJlc3VtZW46IExhIHRyYW5zYWNjacOzbiBULTEwMDEgcHJlc2VudGEgdW4gbW9udG8gMTgwMCBQRU4sIHF1ZSBleGNlZGUgZW4gbcOhcyBkZSAzIHZlY2VzIGVsIHByb21lZGlvIGhhYml0dWFsIGRlbCBjbGllbnRlICg1MDAgUEVOKSwgeSBzZSByZWFsaXrDsyBhIGxhcyAwMzoxNSBBTSwgZnVlcmEgZGVsIGhvcmFyaW8gaGFiaXR1YWwgKDA4OjAwIGEgMjA6MDApLiBBdW5xdWUgcGHDrXMgeSBkaXNwb3NpdGl2byBjb2luY2lkZW4gY29uIGVsIGhpc3RvcmlhbCwgbGEgcG9sw610aWNhIEZQLTAxIGluZGljYSBxdWUgZXN0YSBjb21iaW5hY2nDs24gZGUgbW9udG8gZWxldmFkbyB5IGhvcmFyaW8gZnVlcmEgZGUgcmFuZ28gcmVxdWllcmUgdW4gQ0hBTExFTkdFIHBhcmEgdmVyaWZpY2FyIGF1dGVudGljaWRhZC4gTm8gYXBsaWNhIGVzY2FsYW1pZW50byBodW1hbm8gcG9ycXVlIHBhw61zIHkgZGlzcG9zaXRpdm8gc29uIGhhYml0dWFsZXMuICAKQ29uY2x1c2nDs246IEFwbGljYSBhY2Npw7NuIENIQUxMRU5HRSBzZWfDum4gcG9sw610aWNhIGludGVybmEgRlAtMDEsIHZlcnNpb24gMjAyNS4xLCBkZWJpZG8gYSBtb250byB5IGhvcmFyaW8gZnVlcmEgZGVsIHBhdHLDs24gbm9ybWFsLpSMDnByb3RlY3RlZF9kYXRhlE6MA3VyaZROjAptZWRpYV90eXBllE6MB21lc3NhZ2WUTowKZXJyb3JfY29kZZROjA1lcnJvcl9kZXRhaWxzlE6MDXVzYWdlX2RldGFpbHOUTowHY2FsbF9pZJROjARuYW1llE6MCWFyZ3VtZW50c5ROjAlleGNlcHRpb26UTowGcmVzdWx0lE6MB2ZpbGVfaWSUTowPdmVjdG9yX3N0b3JlX2lklE6MBmlucHV0c5ROjAdvdXRwdXRzlE6MCGltYWdlX2lklE6MCXRvb2xfbmFtZZROjAtzZXJ2ZXJfbmFtZZROjAZvdXRwdXSUTowCaWSUTowNZnVuY3Rpb25fY2FsbJROjBJ1c2VyX2lucHV0X3JlcXVlc3SUTowIYXBwcm92ZWSUTnViYYwLYXV0aG9yX25hbWWUTowKbWVzc2FnZV9pZJROaBB9lGgSTnViLg==",
+            "__type__": "agent_framework._types:Message"
+          },
+          {
+            "__pickled__": "gAWVTQwAAAAAAACMFmFnZW50X2ZyYW1ld29yay5fdHlwZXOUjAdNZXNzYWdllJOUKYGUfZQojARyb2xllIwJYXNzaXN0YW50lIwIY29udGVudHOUXZRoAIwHQ29udGVudJSTlCmBlH2UKIwEdHlwZZSMBHRleHSUjAthbm5vdGF0aW9uc5ROjBVhZGRpdGlvbmFsX3Byb3BlcnRpZXOUfZSMEnJhd19yZXByZXNlbnRhdGlvbpSMIW9wZW5haS50eXBlcy5jaGF0LmNoYXRfY29tcGxldGlvbpSMBkNob2ljZZSTlCmBlH2UKIwIX19kaWN0X1+UfZQojA1maW5pc2hfcmVhc29ulIwEc3RvcJSMBWluZGV4lEsAjAhsb2dwcm9ic5ROjAdtZXNzYWdllIwpb3BlbmFpLnR5cGVzLmNoYXQuY2hhdF9jb21wbGV0aW9uX21lc3NhZ2WUjBVDaGF0Q29tcGxldGlvbk1lc3NhZ2WUk5QpgZR9lChoGH2UKIwHY29udGVudJRYJAgAACoqQXJndW1lbnRvcyBQUk8gRlJBVURFKiogIAotIExhIHRyYW5zYWNjacOzbiBkZSAxODAwIFBFTiBlcyBtw6FzIGRlbCB0cmlwbGUgZGVsIG1vbnRvIHByb21lZGlvIGhhYml0dWFsIGRlIDUwMCBQRU4gZGVsIGNsaWVudGUgQ1UtMDAxLCBsbyBxdWUgZ2VuZXJhIHVuYSBhbGVydGEgcG9yIGluY3JlbWVudG8gc2lnbmlmaWNhdGl2byBlbiBlbCBnYXN0by4gIAotIFNlZ8O6biBsYSBwb2zDrXRpY2EgaW50ZXJuYSBGUC0wMSwgbGEgdHJhbnNhY2Npw7NuIHNlIHJlYWxpesOzIGEgbGFzIDAzOjE1IEFNLCB1biBob3JhcmlvIGZ1ZXJhIGRlbCByYW5nbyB1c3VhbCBkZSAwODowMCBhIDIwOjAwLCBsbyBxdWUgZXMgdW4gaW5kaWNhZG9yIHJlbGV2YW50ZSBkZSBjb21wb3J0YW1pZW50byBhdMOtcGljby4gIAotIExhIGNvbWJpbmFjacOzbiBkZSBtb250byBlbGV2YWRvIHkgaG9yYXJpbyBmdWVyYSBkZWwgcGF0csOzbiBlcyBzdWZpY2llbnRlIHBhcmEgYWN0aXZhciB1bmEgYWNjacOzbiBDSEFMTEVOR0UsIGxvIHF1ZSBpbXBsaWNhIGxhIG5lY2VzaWRhZCBkZSBtYXlvciB2ZXJpZmljYWNpw7NuIGRlIGF1dGVudGljaWRhZCBhbnRlIHBvc2libGUgcmllc2dvLiAgCgoqKkFyZ3VtZW50b3MgUFJPIENMSUVOVEUgKE5PIEZSQVVERSkqKiAgCi0gTGEgb3BlcmFjacOzbiBmdWUgcmVhbGl6YWRhIGRlc2RlIGVsIG1pc21vIHBhw61zIChQZXLDuiksIGNvbiBkaXNwb3NpdGl2byAoRC0wMSkgeSBjYW5hbCAod2ViKSBoYWJpdHVhbGVzIHBhcmEgZWwgY2xpZW50ZSwgc2Vnw7puIGhpc3RvcmlhbCBjb25vY2lkbywgbG8gcXVlIHN1Z2llcmUgY29udGludWlkYWQgZW4gbG9zIHBhdHJvbmVzIGRlIHVzby4gIAotIEVsIGFnZW50ZSB0cmFuc2FjdGlvbl9jb250ZXh0IG5vIGRldGVjdMOzIHNlw7FhbGVzIGlubWVkaWF0YXMgZGUgZnJhdWRlIG5pIHBhdHJvbmVzIGFuw7NtYWxvcywgYXNpZ25hbmRvIHVuIG5pdmVsIGRlIHJpZXNnbyBiYWpvIGEgbW9kZXJhZG8geSByZWNvbWVuZGFuZG8gc29sbyBtb25pdG9yZW8gcnV0aW5hcmlvLiAgCi0gRWwgaG9yYXJpbyBkZSBsYSB0cmFuc2FjY2nDs24gZXN0w6EgZW4gZGlzcHV0YTogbWllbnRyYXMgaW50ZXJuYWxfcG9saWN5IGluZGljYSBob3JhIGZ1ZXJhIGRlIHJhbmdvLCBiZWhhdmlvcmFsX3BhdHRlcm4gc2XDsWFsYSBxdWUgbGEgb3BlcmFjacOzbiBvY3VycmnDsyBkZW50cm8gZGVsIGhvcmFyaW8gaGFiaXR1YWwgKDg6MDAgYSAyMDowMCksIGxvIHF1ZSBhdGVudWFyw61hIGxhIHNvc3BlY2hhLiAgCi0gTGEgcmVjb21lbmRhY2nDs24gZGVsIGFnZW50ZSBiZWhhdmlvcmFsX3BhdHRlcm4gZXMgcmV2aXNpw7NuIGNvbnRleHR1YWwgYWRpY2lvbmFsLCBubyBibG9xdWVvIGlubWVkaWF0byBuaSByZWNoYXpvLCBzZcOxYWxhbmRvIHF1ZSBlbCBjb21wb3J0YW1pZW50byBnZW5lcmFsIGVzIGNvbnNpc3RlbnRlLiAgCgoqKkNvbmNsdXNpw7NuIGNvbXBhcmF0aXZhIGZpbmFsKiogIApFbCBkZWJhdGUgZ2lyYSBlbiB0b3JubyBhbCBtYXlvciBtb250byB5IGVsIGhvcmFyaW8gZGUgbGEgdHJhbnNhY2Npw7NuLiBBdW5xdWUgZWwgaW5jcmVtZW50byBzaWduaWZpY2F0aXZvIGVuIG1vbnRvIHkgZWwgaG9yYXJpbyBhdMOtcGljbyBzZcOxYWxhZG8gcG9yIGludGVybmFsX3BvbGljeSBzdWdpZXJlbiByaWVzZ28geSBsYSBuZWNlc2lkYWQgZGUgdW4gY2hhbGxlbmdlLCBsYSBhdXNlbmNpYSBkZSBzZcOxYWxlcyBhZGljaW9uYWxlcyBkZSBmcmF1ZGUsIGxhIGNvaW5jaWRlbmNpYSBlbiBwYcOtcywgZGlzcG9zaXRpdm8geSBjYW5hbCwgeSBsYSBldmFsdWFjacOzbiBkZSByaWVzZ28gYmFqYS1tb2RlcmFkYSBkZSBvdHJvcyBhZ2VudGVzLCBwb25lbiBlbiBkdWRhIGxhIGV4aXN0ZW5jaWEgZGUgdW4gZnJhdWRlIGNsYXJvLiBQb3IgdGFudG8sIGVsIGNhc28gcHJlc2VudGEgaW5kaWNhZG9yZXMgcXVlIGFjb25zZWphbiBwcmVjYXVjacOzbiB5IHNlZ3VpbWllbnRvIGRldGFsbGFkbywgc2luIGVtYmFyZ28gbm8gYXBvcnRhbiBldmlkZW5jaWEgY29uY2x1eWVudGUgZGUgcXVlIHNlIHRyYXRlIGRlIHVuYSB0cmFuc2FjY2nDs24gZnJhdWR1bGVudGEulIwHcmVmdXNhbJROaAWMCWFzc2lzdGFudJRoD12UjAVhdWRpb5ROjA1mdW5jdGlvbl9jYWxslE6MCnRvb2xfY2FsbHOUTnWMEl9fcHlkYW50aWNfZXh0cmFfX5R9lIwXX19weWRhbnRpY19maWVsZHNfc2V0X1+Uj5QoaAVoD2glaCeQjBRfX3B5ZGFudGljX3ByaXZhdGVfX5ROdWJ1aC19lIwWY29udGVudF9maWx0ZXJfcmVzdWx0c5R9lCiMBGhhdGWUfZQojAhmaWx0ZXJlZJSJjAhzZXZlcml0eZSMBHNhZmWUdYwJc2VsZl9oYXJtlH2UKGg3iWg4jARzYWZllHWMBnNleHVhbJR9lChoN4loOIwEc2FmZZR1jAh2aW9sZW5jZZR9lChoN4loOIwEc2FmZZR1dXNoL4+UKGgaaBxoHmgdkGgxTnViaA5oJowOcHJvdGVjdGVkX2RhdGGUTowDdXJplE6MCm1lZGlhX3R5cGWUTmgeTowKZXJyb3JfY29kZZROjA1lcnJvcl9kZXRhaWxzlE6MDXVzYWdlX2RldGFpbHOUTowHY2FsbF9pZJROjARuYW1llE6MCWFyZ3VtZW50c5ROjAlleGNlcHRpb26UTowGcmVzdWx0lE6MB2ZpbGVfaWSUTowPdmVjdG9yX3N0b3JlX2lklE6MBmlucHV0c5ROjAdvdXRwdXRzlE6MCGltYWdlX2lklE6MCXRvb2xfbmFtZZROjAtzZXJ2ZXJfbmFtZZROjAZvdXRwdXSUTowCaWSUTmgrTowSdXNlcl9pbnB1dF9yZXF1ZXN0lE6MCGFwcHJvdmVklE51YmGMC2F1dGhvcl9uYW1llIwGZGViYXRllIwKbWVzc2FnZV9pZJROaBB9lGgSTnViLg==",
+            "__type__": "agent_framework._types:Message"
+          }
+        ],
+        "agent_session": {
+          "type": "session",
+          "session_id": "7b001d71-25c7-4ed9-90ba-0b2f7ea8f981",
+          "service_session_id": null,
+          "state": {
+            "in_memory": {
+              "messages": [
+                {
+                  "type": "message",
+                  "role": "user",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "Agente: transaction_context  \nResumen: La transacción T-1001 por un monto de 1800 PEN se realizó vía web desde el dispositivo D-01 en Perú. No se detectaron señales inmediatas de fraude relacionadas con país o dispositivo, ni patrones anómalos aparentes. El nivel de riesgo asignado es bajo a moderado, con recomendación de monitoreo estándar y validación de identidad en caso de actividad inusual futura del cliente CU-001 o dispositivo D-01.  \nConclusión: Riesgo bajo a moderado, sin indicios claros de fraude; se sugiere seguimiento usual.\n\nAgente: behavioral_pattern  \nResumen: La transacción T-1001 de 1800 PEN es más de tres veces el monto promedio habitual (500 PEN) del cliente CU-001. No obstante, la operación se efectuó en el país, con dispositivo y canal habituales, y dentro del horario usual (8:00 a 20:00). El incremento en el monto genera una señal de alerta, pero la coincidencia con el patrón histórico atenúa el nivel de riesgo. Se recomienda revisión adicional del contexto del gasto.  \nConclusión: Riesgo moderado por monto elevado pero comportamiento consistente; sugerencia de análisis contextual adicional.\n\nAgente: internal_policy  \nResumen: La transacción T-1001 presenta un monto 1800 PEN, que excede en más de 3 veces el promedio habitual del cliente (500 PEN), y se realizó a las 03:15 AM, fuera del horario habitual (08:00 a 20:00). Aunque país y dispositivo coinciden con el historial, la política FP-01 indica que esta combinación de monto elevado y horario fuera de rango requiere un CHALLENGE para verificar autenticidad. No aplica escalamiento humano porque país y dispositivo son habituales.  \nConclusión: Aplica acción CHALLENGE según política interna FP-01, version 2025.1, debido a monto y horario fuera del patrón normal.",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "additional_properties": {}
+                },
+                {
+                  "type": "message",
+                  "role": "assistant",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "**Argumentos PRO FRAUDE**  \n- La transacción de 1800 PEN es más del triple del monto promedio habitual de 500 PEN del cliente CU-001, lo que genera una alerta por incremento significativo en el gasto.  \n- Según la política interna FP-01, la transacción se realizó a las 03:15 AM, un horario fuera del rango usual de 08:00 a 20:00, lo que es un indicador relevante de comportamiento atípico.  \n- La combinación de monto elevado y horario fuera del patrón es suficiente para activar una acción CHALLENGE, lo que implica la necesidad de mayor verificación de autenticidad ante posible riesgo.  \n\n**Argumentos PRO CLIENTE (NO FRAUDE)**  \n- La operación fue realizada desde el mismo país (Perú), con dispositivo (D-01) y canal (web) habituales para el cliente, según historial conocido, lo que sugiere continuidad en los patrones de uso.  \n- El agente transaction_context no detectó señales inmediatas de fraude ni patrones anómalos, asignando un nivel de riesgo bajo a moderado y recomendando solo monitoreo rutinario.  \n- El horario de la transacción está en disputa: mientras internal_policy indica hora fuera de rango, behavioral_pattern señala que la operación ocurrió dentro del horario habitual (8:00 a 20:00), lo que atenuaría la sospecha.  \n- La recomendación del agente behavioral_pattern es revisión contextual adicional, no bloqueo inmediato ni rechazo, señalando que el comportamiento general es consistente.  \n\n**Conclusión comparativa final**  \nEl debate gira en torno al mayor monto y el horario de la transacción. Aunque el incremento significativo en monto y el horario atípico señalado por internal_policy sugieren riesgo y la necesidad de un challenge, la ausencia de señales adicionales de fraude, la coincidencia en país, dispositivo y canal, y la evaluación de riesgo baja-moderada de otros agentes, ponen en duda la existencia de un fraude claro. Por tanto, el caso presenta indicadores que aconsejan precaución y seguimiento detallado, sin embargo no aportan evidencia concluyente de que se trate de una transacción fraudulenta.",
+                      "additional_properties": {}
+                    }
+                  ],
+                  "author_name": "debate",
+                  "additional_properties": {}
+                }
+              ]
+            }
+          }
+        },
+        "pending_agent_requests": {},
+        "pending_responses_to_agent": []
+      },
+      "decision_arbiter": {},
+      "human_intervention_executor": {},
+      "explainability": {}
+    }
+  },
+  "pending_request_info_events": {},
+  "iteration_count": 3,
+  "metadata": {},
+  "version": "1.0"
+}

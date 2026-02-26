@@ -1,4 +1,5 @@
 from typing import Any, List
+import json
 from typing_extensions import Never
 
 from agent_framework import AgentExecutorResponse, Agent, Executor, Message, WorkflowContext, handler
@@ -81,7 +82,7 @@ No inventes información. Usa solo la evidencia entregada.
         super().__init__(agent=agent, id=name)
 
     @handler
-    async def aggregate(self, results: List[Any], ctx: WorkflowContext[Never, List[Message]]) -> None:
+    async def aggregate(self, results: List[Any], ctx: WorkflowContext[dict[str, Any], dict[str, Any]]) -> None:
         combined: list[Message] = []
         for item in results:
             if isinstance(item, AgentExecutorResponse):
@@ -103,4 +104,14 @@ No inventes información. Usa solo la evidencia entregada.
 
         arbitration = await self.agent.run(combined)
         output_messages = list(getattr(arbitration, "messages", []) or [])
-        await ctx.yield_output(output_messages)
+        assistant_messages = [m for m in output_messages if getattr(m, "role", None) == "assistant" and m.text]
+        decision_obj: dict[str, Any] = {}
+        if assistant_messages:
+            raw_text = assistant_messages[-1].text
+            try:
+                decision_obj = json.loads(raw_text)
+            except Exception:
+                decision_obj = {"raw": raw_text}
+
+        await ctx.send_message(decision_obj)
+        await ctx.yield_output(decision_obj)

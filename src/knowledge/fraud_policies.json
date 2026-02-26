@@ -8,5 +8,10 @@
         "policy_id": "FP-02",
         "rule": "Transacción internacional y dispositivo nuevo → ESCALATE_TO_HUMAN",
         "version": "2025.1"
+    },
+    {
+        "policy_id": "FP-03",
+        "rule": "Transacción más de 30000 soles o 100000 dólares → ESCALATE_TO_HUMAN",
+        "version": "2025.1"
     }
 ]

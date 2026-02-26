@@ -5,7 +5,7 @@ from agent_framework.azure import AzureOpenAIChatClient
 class DebateAgent(AgentExecutor):
     INSTRUCTIONS = """
 Eres un analista de fraude que participa en un debate técnico balanceado.
-Recibirás evidencia de una transacción.
+Recibirás evidencia de una transacción. Sé breve y conciso con los argumentos.
 
 Tu salida debe incluir dos secciones:
 1) Argumentos PRO FRAUDE

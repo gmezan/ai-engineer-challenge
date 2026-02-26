@@ -234,3 +234,39 @@ async def main() -> None:
 
 if __name__ == "__main__":
     asyncio.run(main())
+
+async def main() -> None:
+    workflow: Workflow = WorkflowBuilder(start_executor=start_executor, checkpoint_storage=checkpoint_storage) \
+        .add_fan_out_edges(start_executor, concurrent_agents) \
+        .add_fan_in_edges(concurrent_agents, evidence_aggregation) \
+        .add_edge(evidence_aggregation, debate_agent) \
+        .add_fan_in_edges([debate_agent, evidence_aggregation], decision_arbiter) \
+        .add_switch_case_edge_group(
+            decision_arbiter,
+            [
+                Case(
+                    condition=lambda result: isinstance(result, dict)
+                    and str(result.get("decision", "")).upper() == "ESCALATE_TO_HUMAN",
+                    target=human_intervention_executor,
+                ),
+                Default(target=explainability_agent),
+            ],
+        ) \
+        .build()
+    output_evt: WorkflowEvent  | None = None
+    events = await workflow.run(message=input_message)
+
+    for event in events:
+        #_trace_event(event)
+        if (event.type == "output"):
+            output_evt = event
+
+    print("===== Final Output =====")
+    final_data: Any = output_evt.data
+
+    if isinstance(final_data, list) and final_data and all(isinstance(item, Message) for item in final_data):
+        for i, msg in enumerate(final_data, start=1):
+            name = msg.author_name if msg.author_name else "user"
+            print(f"{'-' * 60}\n\n{i:02d} [{name}]:\n{msg.text}")
+    else:
+        print(json.dumps(final_data, ensure_ascii=False, indent=2, default=str))
