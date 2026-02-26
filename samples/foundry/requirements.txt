@@ -1,0 +1,2 @@
+azure-ai-agentserver-agentframework==1.0.0b14
+opentelemetry-semantic-conventions-ai==0.4.13
