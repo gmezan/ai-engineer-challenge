@@ -8,6 +8,14 @@ resource "random_pet" "aoai" {
   length = 2
 }
 
+resource "random_pet" "cosmos" {
+  length = 2
+}
+
+resource "random_pet" "search" {
+  length = 2
+}
+
 resource "random_integer" "ri" {
   min = 10000
   max = 99999
@@ -37,38 +45,53 @@ resource "azurerm_cognitive_deployment" "model_1" {
   }
 }
 
+resource "azurerm_cognitive_deployment" "embedding_model" {
+  name                 = "text-embedding-ada-002"
+  cognitive_account_id = azurerm_cognitive_account.aoai.id
+
+  model {
+    format  = "OpenAI"
+    name    = "text-embedding-ada-002"
+    version = "2"
+  }
+
+  sku {
+    name     = "Standard"
+    capacity = 1
+  }
+}
+
 resource "azurerm_search_service" "aisearch" {
-  name                = "aisearch-${random_pet.aoai.id}"
+  name                = "aisearch-${random_pet.search.id}"
   resource_group_name = data.azurerm_resource_group.rg.name
   location            = data.azurerm_resource_group.rg.location
-  sku                 = "standard"
+  sku                 = "free"
 
   local_authentication_enabled = true
+  authentication_failure_mode  = "http403"
 }
 
 resource "azurerm_cosmosdb_account" "cosmos_account" {
-  name                = "coac-${random_pet.aoai.id}-${random_integer.ri.result}"
+  name                = "coac-${random_pet.cosmos.id}-${random_integer.ri.result}"
   location            = data.azurerm_resource_group.rg.location
   resource_group_name = data.azurerm_resource_group.rg.name
   offer_type          = "Standard"
   kind                = "GlobalDocumentDB"
 
-  automatic_failover_enabled = true
-
   consistency_policy {
-    consistency_level       = "BoundedStaleness"
-    max_interval_in_seconds = 300
-    max_staleness_prefix    = 100000
+    consistency_level = "Session"
   }
 
   geo_location {
     location          = data.azurerm_resource_group.rg.location
     failover_priority = 0
   }
+
+  free_tier_enabled = true
 }
 
 resource "azurerm_cosmosdb_sql_database" "sql_db" {
-  name                = "codb-${random_pet.aoai.id}-${random_integer.ri.result}"
+  name                = "challenge-db"
   resource_group_name = data.azurerm_resource_group.rg.name
   account_name        = azurerm_cosmosdb_account.cosmos_account.name
   # You can optionally define throughput here at the database level
