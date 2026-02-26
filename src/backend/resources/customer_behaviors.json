@@ -1,0 +1,22 @@
+[
+  {
+    "customer_id": "CU-001",
+    "usual_amount_avg": 500.0,
+    "usual_hours": {
+      "from": 8,
+      "to": 20
+    },
+    "usual_countries": ["PE"],
+    "usual_devices": ["D-01"]
+  },
+  {
+    "customer_id": "CU-002",
+    "usual_amount_avg": 1200.0,
+    "usual_hours": {
+      "from": 9,
+      "to": 22
+    },
+    "usual_countries": ["PE"],
+    "usual_devices": ["D-02"]
+  }
+]
