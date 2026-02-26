@@ -94,5 +94,24 @@ resource "azurerm_cosmosdb_sql_database" "sql_db" {
   name                = "challenge-db"
   resource_group_name = data.azurerm_resource_group.rg.name
   account_name        = azurerm_cosmosdb_account.cosmos_account.name
-  # You can optionally define throughput here at the database level
+}
+
+resource "azurerm_cosmosdb_sql_container" "customer_behaviors" {
+  name                  = "customer_behaviors"
+  resource_group_name   = azurerm_cosmosdb_account.cosmos_account.resource_group_name
+  account_name          = azurerm_cosmosdb_account.cosmos_account.name
+  database_name         = azurerm_cosmosdb_sql_database.sql_db.name
+  partition_key_paths   = ["/customer_id"]
+  partition_key_version = 1
+  throughput            = 400
+}
+
+resource "azurerm_cosmosdb_sql_container" "transactions" {
+  name                  = "transactions"
+  resource_group_name   = azurerm_cosmosdb_account.cosmos_account.resource_group_name
+  account_name          = azurerm_cosmosdb_account.cosmos_account.name
+  database_name         = azurerm_cosmosdb_sql_database.sql_db.name
+  partition_key_paths   = ["/customer_id"]
+  partition_key_version = 1
+  throughput            = 400
 }
