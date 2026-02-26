@@ -27,7 +27,7 @@ QUERY_TEXT = os.environ.get(
 	"VECTOR_TEST_QUERY",
 	"transacción internacional desde dispositivo nuevo",
 )
-TOP_K = int(os.environ.get("VECTOR_TEST_TOP_K", "3"))
+TOP_K = int(os.environ.get("VECTOR_TEST_TOP_K", "5"))
 
 
 def main() -> None:

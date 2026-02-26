@@ -58,6 +58,38 @@ python main.py
 python test.py
 ```
 
-## Nota rápida
+Salida esperada de ejemplo:
 
-Si cambias el modelo/deployment de embeddings, recuerda ajustar dimensiones del vector para que coincidan con el índice.
+```text
+% python test.py
+Query: transacción internacional desde dispositivo nuevo
+Index: fraud_policies_index
+Top K: 5
+Results:
+1. score=0.9213937
+  chunk_id=2
+  policy_id=FP-02
+  version=2025.1
+  rule=Transacción internacional y dispositivo nuevo → ESCALATE_TO_HUMAN
+2. score=0.8676525
+  chunk_id=4
+  policy_id=FP-03
+  version=2025.1
+  rule=Transacción más de 30000 soles o 100000 dólares, e internacional → BLOCK
+3. score=0.8475139
+  chunk_id=3
+  policy_id=FP-03
+  version=2025.1
+  rule=Transacción más de 30000 soles o 100000 dólares → ESCALATE_TO_HUMAN
+4. score=0.84007776
+  chunk_id=5
+  policy_id=FP-04
+  version=2025.1
+  rule=Transacción promedio habitual y horario en rango → APPROVE
+5. score=0.8107099
+  chunk_id=1
+  policy_id=FP-01
+  version=2025.1
+  rule=Monto > 3x promedio habitual y horario fuera de rango → CHALLENGE
+```
+

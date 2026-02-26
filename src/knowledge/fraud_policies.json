@@ -13,5 +13,15 @@
         "policy_id": "FP-03",
         "rule": "Transacción más de 30000 soles o 100000 dólares → ESCALATE_TO_HUMAN",
         "version": "2025.1"
+    },
+    {
+        "policy_id": "FP-03",
+        "rule": "Transacción más de 30000 soles o 100000 dólares, e internacional → BLOCK",
+        "version": "2025.1"
+    },
+    {
+        "policy_id": "FP-04",
+        "rule": "Transacción promedio habitual y horario en rango → APPROVE",
+        "version": "2025.1"
     }
 ]
