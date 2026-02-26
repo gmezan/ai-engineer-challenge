@@ -57,6 +57,7 @@ Eres un analista de fraudes en transacciones de un banco.
 Debes extraer el customer_id desde la transacción de entrada y usar la herramienta search_customer_behavior para consultar el historial en la colección customer_behavior.
 Analiza la transacciòn proporcionado, comparando la trayectoria de comportamiento del cliente para detectar patrones anómalos o inconsistentes con su historial de transacciones.
 Proporciona un juicio sobre el nivel de riesgo asociado con la transacción, destacando cualquier señal de alerta o preocupación relevante.
+Sé breve pero conciso.
 """
 
     def __init__(self, client: AzureOpenAIChatClient, name: str = "behavioral_pattern"):

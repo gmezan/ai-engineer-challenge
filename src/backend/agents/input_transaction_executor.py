@@ -31,12 +31,8 @@ def search_transaction_by_id(
     transaction_id: Annotated[str, "Transaction ID to query in transactions container"],
 ) -> str:
     """Search the transactions container in Cosmos DB by transaction_id."""
-    print(f"[input_transaction_executor] Looking up transaction_id={transaction_id}")
     try:
         client, database = get_cosmos_database_client()
-        print(
-            f"[input_transaction_executor] Querying {CHALLENGE_DATABASE_NAME}.{TRANSACTIONS_CONTAINER}"
-        )
         container = database.get_container_client(TRANSACTIONS_CONTAINER)
         query = "SELECT * FROM c WHERE c.transaction_id = @transaction_id"
         parameters = [{"name": "@transaction_id", "value": transaction_id}]
@@ -49,21 +45,17 @@ def search_transaction_by_id(
         )
 
         if not items:
-            print(f"[input_transaction_executor] No results for transaction_id={transaction_id}")
             return f"No transaction found for transaction_id={transaction_id}."
 
-        print(f"[input_transaction_executor] Found {len(items)} result(s)")
         sanitized = _strip_system_fields(items[0])
         return json.dumps(sanitized, ensure_ascii=False, default=str)
     except Exception as exc:
-        print(f"[input_transaction_executor] Query error for transaction_id={transaction_id}: {exc}")
         return (
             f"Error querying {CHALLENGE_DATABASE_NAME}.{TRANSACTIONS_CONTAINER} "
             f"for transaction_id={transaction_id}: {exc}"
         )
     finally:
         if "client" in locals():
-            print("[input_transaction_executor] Closing Cosmos DB client")
             close_cosmos_client(client)
 
 

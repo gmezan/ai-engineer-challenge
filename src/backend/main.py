@@ -1,6 +1,7 @@
 
 import asyncio
 import json
+import os
 from typing import Any
 from datetime import datetime, timezone
 
@@ -11,6 +12,8 @@ from agent_framework import (
     Workflow,
     WorkflowBuilder,
     WorkflowEvent)
+from agents.debate_agent import DebateAgent
+from agents.decision_arbiter_agent import DecisionArbiterAgent
 from agents.input_transaction_executor import InputTransactionExecutor
 from models.Transaction import Transaction
 from agent_framework.azure import AzureOpenAIChatClient
@@ -20,10 +23,31 @@ from agents.external_threat_intel_agent import ExternalThreatIntelAgent
 from agents.internal_policy_agent import InternalPolicyAgent
 from agents.transaction_context_agent import TransactionContextAgent
 
+from agent_framework.openai import OpenAIResponsesClient
 
 load_dotenv()
 
 client = AzureOpenAIChatClient(credential=DefaultAzureCredential())
+
+
+def _build_openai_responses_client() -> OpenAIResponsesClient:
+    api_key = os.getenv("OPENAI_API_KEY") or os.getenv("AZURE_OPENAI_API_KEY")
+    model_id = os.getenv("OPENAI_RESPONSES_MODEL_ID") or os.getenv("AZURE_OPENAI_CHAT_DEPLOYMENT_NAME")
+    base_url = os.getenv("OPENAI_BASE_URL") or os.getenv("AZURE_OPENAI_BASE_URL")
+
+    if not base_url:
+        endpoint = (os.getenv("AZURE_OPENAI_ENDPOINT") or "").rstrip("/")
+        if endpoint:
+            base_url = f"{endpoint}/openai/v1"
+
+    return OpenAIResponsesClient(
+        model_id=model_id,
+        api_key=api_key,
+        base_url=base_url,
+    )
+
+
+client_openai = _build_openai_responses_client()
 
 # Start executor
 start_executor = InputTransactionExecutor(client)
@@ -32,8 +56,12 @@ start_executor = InputTransactionExecutor(client)
 transaction_context = TransactionContextAgent(client)
 behavioral_pattern = BehavioralPatternAgent(client)
 internal_policy = InternalPolicyAgent(client)
-external_threat_intel = ExternalThreatIntelAgent(client)
-concurrent_agents = [transaction_context, behavioral_pattern, internal_policy, external_threat_intel]
+external_threat_intel = ExternalThreatIntelAgent(client_openai)
+concurrent_agents = [transaction_context, behavioral_pattern, internal_policy] #external_threat_intel]
+
+debate_agent = DebateAgent(client)
+
+decision_arbiter = DecisionArbiterAgent(client)
 
 # Aggregator agent
 evidence_aggregation = EvidenceAggregationAgent(client)
@@ -84,13 +112,15 @@ def _trace_event(event: WorkflowEvent) -> None:
 async def main() -> None:
     workflow: Workflow = WorkflowBuilder(start_executor=start_executor) \
         .add_fan_out_edges(start_executor, concurrent_agents) \
-        .add_fan_in_edges(concurrent_agents, evidence_aggregation).build()
-
+        .add_fan_in_edges(concurrent_agents, evidence_aggregation) \
+        .add_edge(evidence_aggregation, debate_agent) \
+        .add_fan_in_edges([debate_agent, evidence_aggregation], decision_arbiter) \
+        .build()
     output_evt: WorkflowEvent  | None = None
     events = await workflow.run(message=input_message)
 
     for event in events:
-        _trace_event(event)
+        #_trace_event(event)
         if (event.type == "output"):
             output_evt = event
 

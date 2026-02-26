@@ -16,9 +16,9 @@ class EvidenceAggregationAgent(Executor):
     agent: Agent
 
     INSTRUCTIONS = """
-Eres un analista de fraudes en transacciones de un banco.
-Agrega y sintetiza la información proporcionada por los agentes de contexto de transacción, patrón de comportamiento, política interna e inteligencia de amenazas externas.
-Proporciona un juicio final sobre el nivel de riesgo asociado con la transacción, destacando cualquier señal de alerta o preocupación relevante.
+Eres un analista de fraudes en transacciones de un banco, tu función es sintetizar la información que te proporcionan otros agentes.
+Para cada agente agregado, genera un resumen independiente con los detalles más importantes, incluyendo datos concretos observados y una conclusión específica de ese agente.
+Estructura la salida por agente.
 """
 
     def __init__(self, client: AzureOpenAIChatClient, name: str = "evidence_aggregation"):
@@ -30,20 +30,23 @@ Proporciona un juicio final sobre el nivel de riesgo asociado con la transacció
         super().__init__(agent=agent, id=name)
 
     @handler
-    async def aggregate(self, results: List[AgentExecutorResponse], ctx: WorkflowContext[Never, List[Message]]) -> None:
+    async def aggregate(self, results: List[AgentExecutorResponse], ctx: WorkflowContext[str, str]) -> None:
         # Combine only each branch's final assistant analysis to avoid duplicated history/tokens
         combined: list[Message] = []
         for r in results:
-            print(r.executor_id)
             messages = list(getattr(r.agent_response, "messages", []) or [])
             assistant_messages = [m for m in messages if getattr(m, "role", None) == "assistant" and m.text]
             if assistant_messages:
                 final_text = assistant_messages[-1].text
-                combined.append(Message("user", text=f"[{r.executor_id}]\n{final_text}"))
+                combined_input = f"[{r.executor_id}]\n{final_text}"
+                #print(f"Combined input for {r.executor_id}:\n{combined_input}\n")
+                combined.append(Message("user", text=combined_input))
 
-        # Let the aggregator agent synthesize the combined evidence
         response = await self.agent.run(combined)
 
-        # Yield the agent's assistant messages as the final aggregated output
         msgs = list(getattr(response, "messages", []) or [])
-        await ctx.yield_output(msgs)
+        assistant_messages = [m for m in msgs if getattr(m, "role", None) == "assistant" and m.text]
+        summary_text = assistant_messages[-1].text if assistant_messages else ""
+
+        await ctx.send_message(summary_text)
+        await ctx.yield_output(summary_text)
